@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <uses language="l:e3030623-38bb-48cb-ae7e-f3be4cd83f0e:BSWModuleDef" />
+  <uses language="l:ef22f920-a15b-4c66-a06e-e0c4aea10605:BSWModuleDescription" />
+  <uses language="l:ce6e35ab-eb16-4223-b8fd-cd565ab8b2fb:com.mbeddr.mpsutil.treenotation.sandboxlang" />
+</dependenciesRoot>
+

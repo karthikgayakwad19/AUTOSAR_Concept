@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="BSWModuleDescription.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:f027d903-6caf-4eb6-bfe5-97f1b7e3c3fa(BSWModuleDescription.constraints)/7334674565658565155">
+    <file name="ModuleValue_Constraints.java">
+      <node id="7334674565658565155" at="15,36,16,35" concept="6" />
+      <node id="7334674565658565156" at="20,90,21,129" concept="3" />
+      <node id="7334674565658565155" at="21,129,22,131" concept="3" />
+      <node id="7334674565658565156" at="22,131,23,42" concept="1" />
+      <node id="7334674565658565155" at="23,42,24,22" concept="4" />
+      <node id="7334674565658565155" at="28,0,29,0" concept="5" trace="ModuleValue$Wj" />
+      <node id="7334674565658565155" at="32,0,33,0" concept="5" trace="definition$9oms" />
+      <node id="7334674565658565155" at="15,0,18,0" concept="0" trace="ModuleValue_Constraints#()V" />
+      <node id="7334674565658565155" at="19,0,26,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7334674565658565155" at="15,36,16,35" />
+      <scope id="7334674565658565155" at="15,0,18,0" />
+      <scope id="7334674565658565155" at="20,90,24,22">
+        <var name="d0" id="7334674565658565156" />
+        <var name="references" id="7334674565658565155" />
+      </scope>
+      <scope id="7334674565658565155" at="19,0,26,0" />
+      <unit id="7334674565658565156" at="21,48,21,128" name="BSWModuleDescription.constraints.ModuleValue_Constraints$1" />
+      <unit id="7334674565658565155" at="27,0,30,0" name="BSWModuleDescription.constraints.ModuleValue_Constraints$CONCEPTS" />
+      <unit id="7334674565658565155" at="31,0,34,0" name="BSWModuleDescription.constraints.ModuleValue_Constraints$LINKS" />
+      <unit id="7334674565658565155" at="14,0,35,0" name="BSWModuleDescription.constraints.ModuleValue_Constraints" />
+    </file>
+  </root>
+</debug-info>
+
