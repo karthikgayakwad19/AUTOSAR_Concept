@@ -8,7 +8,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="uin2" ref="r:74912edc-30f3-44ff-8b9f-c9c8b1fb4035(com.mbeddr.mpsutil.treenotation.sandboxlang.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -44,12 +43,26 @@
     <property role="EcuMT" value="3760683462513073600" />
     <property role="TrG5h" value="ModuleDef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2j7NeO1Wzoj" role="1TKVEi">
+      <property role="IQ2ns" value="2650312224042792467" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3gKCqWBLLV6" resolve="ParameterDef" />
+    </node>
+    <node concept="1TJgyj" id="2j7NeO1WzoK" role="1TKVEi">
+      <property role="IQ2ns" value="2650312224042792496" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="references" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3gKCqWBLPyD" resolve="RefereneceDef" />
+    </node>
     <node concept="1TJgyj" id="3gKCqWBLLWl" role="1TKVEi">
       <property role="IQ2ns" value="3760683462513073941" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="contents" />
+      <property role="20kJfa" value="containers" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
+      <ref role="20lvS9" node="3gKCqWBLLUF" resolve="ContainerDef" />
     </node>
     <node concept="1TJgyi" id="6n9ZUwt7NOS" role="1TKVEl">
       <property role="IQ2nx" value="7334674565657738552" />
@@ -61,13 +74,6 @@
     <property role="EcuMT" value="3760683462513073835" />
     <property role="TrG5h" value="ContainerDef" />
     <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
-    <node concept="1TJgyj" id="3gKCqWBLLY2" role="1TKVEi">
-      <property role="IQ2ns" value="3760683462513074050" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="subContainers" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3gKCqWBLLUF" resolve="ContainerDef" />
-    </node>
     <node concept="1TJgyj" id="3gKCqWBLLY4" role="1TKVEi">
       <property role="IQ2ns" value="3760683462513074052" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -82,6 +88,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3gKCqWBLPyD" resolve="RefereneceDef" />
     </node>
+    <node concept="1TJgyj" id="3gKCqWBLLY2" role="1TKVEi">
+      <property role="IQ2ns" value="3760683462513074050" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subContainers" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3gKCqWBLLUF" resolve="ContainerDef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3gKCqWBLLV6">
     <property role="EcuMT" value="3760683462513073862" />
@@ -94,7 +107,7 @@
     <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="ParameterDef" />
     <node concept="1TJgyi" id="3gKCqWBLPyT" role="1TKVEl">
       <property role="IQ2nx" value="3760683462513088697" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="defaultValue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
@@ -202,9 +215,9 @@
     <node concept="1TJgyj" id="6n9ZUwt6J5v" role="1TKVEi">
       <property role="IQ2ns" value="7334674565657456991" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="packages" />
+      <property role="20kJfa" value="modules" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3gKCqWBLPxJ" resolve="Package" />
+      <ref role="20lvS9" node="3gKCqWBLLR0" resolve="ModuleDef" />
     </node>
   </node>
 </model>
