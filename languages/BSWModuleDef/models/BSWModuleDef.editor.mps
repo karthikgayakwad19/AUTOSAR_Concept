@@ -22,6 +22,7 @@
     <import index="reoo" ref="r:1e59a084-7ebe-4e95-89ab-c58a7e396583(de.slisson.mps.tables.editor)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="o4r4" ref="r:1dfccbdf-a5e4-4798-9d92-ff10e8880347(BSWModuleDef.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -179,7 +180,7 @@
     <node concept="3EZMnI" id="2j7NeO1Su_A" role="2wV5jI">
       <node concept="2iRkQZ" id="2j7NeO1Su_B" role="2iSdaV" />
       <node concept="3F0A7n" id="2j7NeO1Su_V" role="3EZMnx">
-        <ref role="1NtTu8" to="o4r4:6n9ZUwt7NOS" resolve="name" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3EZMnI" id="2j7NeO1Wzpw" role="3EZMnx">
         <node concept="l2Vlx" id="2j7NeO1Wzpx" role="2iSdaV" />
@@ -227,7 +228,7 @@
     <node concept="3EZMnI" id="2j7NeO1YbYb" role="2wV5jI">
       <node concept="2iRkQZ" id="2j7NeO1YbYc" role="2iSdaV" />
       <node concept="3F0A7n" id="2j7NeO1YbYd" role="3EZMnx">
-        <ref role="1NtTu8" to="o4r4:3gKCqWBLPyG" resolve="shortname" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3EZMnI" id="2j7NeO1YbYe" role="3EZMnx">
         <node concept="l2Vlx" id="2j7NeO1YbYf" role="2iSdaV" />
@@ -421,7 +422,7 @@
     <node concept="3EZMnI" id="2j7NeO1X4Zi" role="2wV5jI">
       <node concept="l2Vlx" id="2j7NeO1X4Zj" role="2iSdaV" />
       <node concept="3F0A7n" id="2j7NeO1X4Zk" role="3EZMnx">
-        <ref role="1NtTu8" to="o4r4:3gKCqWBLPyG" resolve="shortname" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="2j7NeO1X4Zl" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -455,7 +456,7 @@
         <node concept="1sVBvm" id="2j7NeO1X51t" role="1sWHZn">
           <node concept="3F0A7n" id="2j7NeO1X51L" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="o4r4:3gKCqWBLPyG" resolve="shortname" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
