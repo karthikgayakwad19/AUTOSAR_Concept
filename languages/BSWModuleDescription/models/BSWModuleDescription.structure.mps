@@ -114,6 +114,11 @@
       <property role="20kJfa" value="definition" />
       <ref role="20lvS9" to="o4r4:3gKCqWBLLV6" resolve="ParameterDef" />
     </node>
+    <node concept="1TJgyi" id="5D3OXK4dch3" role="1TKVEl">
+      <property role="IQ2nx" value="6504275228769961027" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="_tXkoeAr6M">
     <property role="EcuMT" value="674965200416911794" />
