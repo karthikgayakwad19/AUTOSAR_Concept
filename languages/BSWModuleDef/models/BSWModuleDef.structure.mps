@@ -102,16 +102,19 @@
     <property role="EcuMT" value="3760683462513073862" />
     <property role="TrG5h" value="ParameterDef" />
     <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
-  </node>
-  <node concept="1TIwiD" id="3gKCqWBLLY7">
-    <property role="EcuMT" value="3760683462513074055" />
-    <property role="TrG5h" value="IntegerParameterDef" />
-    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="ParameterDef" />
     <node concept="1TJgyi" id="3gKCqWBLPyT" role="1TKVEl">
       <property role="IQ2nx" value="3760683462513088697" />
       <property role="TrG5h" value="defaultValue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="PrWs8" id="5D3OXK4fA47" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3gKCqWBLLY7">
+    <property role="EcuMT" value="3760683462513074055" />
+    <property role="TrG5h" value="IntegerParameterDef" />
+    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="ParameterDef" />
   </node>
   <node concept="1TIwiD" id="3gKCqWBLLY8">
     <property role="EcuMT" value="3760683462513074056" />
