@@ -32,23 +32,12 @@
       </concept>
     </language>
     <language id="ef22f920-a15b-4c66-a06e-e0c4aea10605" name="BSWModuleDescription">
-      <concept id="674965200416911863" name="BSWModuleDescription.structure.ReferenceValue" flags="ng" index="7L4iL">
-        <reference id="674965200416979372" name="definition" index="7LONE" />
-        <reference id="674965200416979370" name="value" index="7LONG" />
-      </concept>
-      <concept id="674965200416767958" name="BSWModuleDescription.structure.ParameterValue" flags="ng" index="7MCEg">
-        <property id="6504275228769961027" name="value" index="1utLuv" />
-        <reference id="674965200416911748" name="definition" index="7L4j2" />
-      </concept>
       <concept id="674965200416767902" name="BSWModuleDescription.structure.ModuleValue" flags="ng" index="7MCFo">
         <reference id="674965200416767986" name="definition" index="7MCEO" />
         <child id="674965200416911750" name="containers" index="7L4j0" />
       </concept>
       <concept id="674965200416767930" name="BSWModuleDescription.structure.ContainerValue" flags="ng" index="7MCFW">
         <reference id="674965200416911746" name="definition" index="7L4j4" />
-        <child id="674965200416911858" name="referenceValues" index="7L4iO" />
-        <child id="674965200416911756" name="subContainers" index="7L4ja" />
-        <child id="674965200416911753" name="parameterValues" index="7L4jf" />
       </concept>
       <concept id="7334674565656690063" name="BSWModuleDescription.structure.AUTOSARVals" flags="ng" index="1SLG8C">
         <property id="3760683462513088684" name="shortname" index="jXZ$4" />
@@ -81,37 +70,6 @@
         <ref role="7L4j4" node="2j7NeO21vj2" resolve="OsEvent" />
       </node>
     </node>
-    <node concept="7MCFo" id="5D3OXK4fXZt" role="1SOKVa">
-      <property role="TrG5h" value="Rte" />
-      <ref role="7MCEO" node="2j7NeO21viA" resolve="Rte" />
-      <node concept="7MCFW" id="5D3OXK4fXZB" role="7L4j0">
-        <property role="TrG5h" value="RteSwComponentInstance_0" />
-        <ref role="7L4j4" node="2j7NeO21viC" resolve="RteSwComponentInstance" />
-        <node concept="7MCEg" id="5D3OXK4fXZC" role="7L4jf">
-          <property role="TrG5h" value="RtePosition" />
-          <property role="1utLuv" value="1" />
-          <ref role="7L4j2" node="5D3OXK4hduW" resolve="RtePosition" />
-        </node>
-        <node concept="7MCFW" id="5D3OXK4fXZD" role="7L4ja">
-          <property role="TrG5h" value="RteEventToTaskMapping_0" />
-          <ref role="7L4j4" node="2j7NeO21viE" resolve="RteEventToTaskMapping" />
-          <node concept="7L4iL" id="5D3OXK4fXZE" role="7L4iO">
-            <property role="TrG5h" value="RteMappedToTaskRef" />
-            <ref role="7LONE" node="2j7NeO21viG" resolve="RteMappedToTaskRef" />
-            <ref role="7LONG" node="5D3OXK43AEo" resolve="OsTask_0" />
-          </node>
-        </node>
-      </node>
-      <node concept="7MCFW" id="5D3OXK4ghqP" role="7L4j0">
-        <property role="TrG5h" value="RteSwComponentInstance_0" />
-        <ref role="7L4j4" node="2j7NeO21viC" resolve="RteSwComponentInstance" />
-        <node concept="7MCEg" id="5D3OXK4ghqQ" role="7L4jf">
-          <property role="TrG5h" value="RtePosition" />
-          <property role="1utLuv" value="2" />
-          <ref role="7L4j2" node="5D3OXK4hduW" resolve="RtePosition" />
-        </node>
-      </node>
-    </node>
     <node concept="7MCFo" id="2j7NeO20Sz$" role="1SOKVa">
       <property role="jXZ$4" value="Rte_0" />
       <property role="TrG5h" value="Rte" />
@@ -120,19 +78,6 @@
         <property role="jXZ$4" value="RteSwCompponentInstance_0" />
         <property role="TrG5h" value="RteSwCompponentInstance_0" />
         <ref role="7L4j4" node="2j7NeO21viC" />
-        <node concept="7MCFW" id="2j7NeO21bcH" role="7L4ja">
-          <property role="jXZ$4" value="RteEventToTaskMapping_0" />
-          <property role="TrG5h" value="RteEventToTaskMapping_0" />
-          <ref role="7L4j4" node="2j7NeO21viE" />
-          <node concept="7L4iL" id="5D3OXK461C9" role="7L4iO">
-            <ref role="7LONE" node="2j7NeO21viG" resolve="RteMappedToTaskRef" />
-          </node>
-        </node>
-        <node concept="7MCFW" id="2j7NeO21bcN" role="7L4ja">
-          <property role="jXZ$4" value="RteEventToTaskMapping_1" />
-          <property role="TrG5h" value="RteEventToTaskMapping_1" />
-          <ref role="7L4j4" node="2j7NeO21viE" />
-        </node>
       </node>
     </node>
   </node>
@@ -187,30 +132,6 @@
           <property role="TrG5h" value="RtePosition" />
           <property role="jXZ$m" value="1" />
           <property role="jXZ$1" value="1" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1SOKV9" id="5D3OXK4ghqX">
-    <property role="3GE5qa" value="mz.another.pacakge" />
-    <node concept="7MCFo" id="5D3OXK4ghqY" role="1SOKVa">
-      <property role="TrG5h" value="Rte" />
-      <ref role="7MCEO" node="2j7NeO21viA" resolve="Rte" />
-      <node concept="7MCFW" id="5D3OXK4hwUB" role="7L4j0">
-        <property role="TrG5h" value="RteSwComponentInstance_0" />
-        <ref role="7L4j4" node="2j7NeO21viC" resolve="RteSwComponentInstance" />
-        <node concept="7MCEg" id="5D3OXK4hwUC" role="7L4jf">
-          <property role="TrG5h" value="RtePosition" />
-          <property role="1utLuv" value="22" />
-          <ref role="7L4j2" node="5D3OXK4hduW" resolve="RtePosition" />
-        </node>
-        <node concept="7MCFW" id="5D3OXK4hwUD" role="7L4ja">
-          <property role="TrG5h" value="RteEventToTaskMapping_0" />
-          <ref role="7L4j4" node="2j7NeO21viE" resolve="RteEventToTaskMapping" />
-          <node concept="7L4iL" id="5D3OXK4hwUE" role="7L4iO">
-            <property role="TrG5h" value="RteMappedToTaskRef" />
-            <ref role="7LONE" node="2j7NeO21viG" resolve="RteMappedToTaskRef" />
-          </node>
         </node>
       </node>
     </node>
