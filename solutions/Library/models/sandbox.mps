@@ -32,15 +32,22 @@
       </concept>
     </language>
     <language id="ef22f920-a15b-4c66-a06e-e0c4aea10605" name="BSWModuleDescription">
+      <concept id="674965200416911863" name="BSWModuleDescription.structure.ReferenceValue" flags="ng" index="7L4iL">
+        <reference id="674965200416979372" name="definition" index="7LONE" />
+      </concept>
+      <concept id="674965200416767958" name="BSWModuleDescription.structure.ParameterValue" flags="ng" index="7MCEg">
+        <property id="6504275228769961027" name="value" index="1utLuv" />
+        <reference id="674965200416911748" name="definition" index="7L4j2" />
+      </concept>
       <concept id="674965200416767902" name="BSWModuleDescription.structure.ModuleValue" flags="ng" index="7MCFo">
         <reference id="674965200416767986" name="definition" index="7MCEO" />
         <child id="674965200416911750" name="containers" index="7L4j0" />
       </concept>
       <concept id="674965200416767930" name="BSWModuleDescription.structure.ContainerValue" flags="ng" index="7MCFW">
         <reference id="674965200416911746" name="definition" index="7L4j4" />
-      </concept>
-      <concept id="7334674565656690063" name="BSWModuleDescription.structure.AUTOSARVals" flags="ng" index="1SLG8C">
-        <property id="3760683462513088684" name="shortname" index="jXZ$4" />
+        <child id="674965200416911858" name="referenceValues" index="7L4iO" />
+        <child id="674965200416911756" name="subContainers" index="7L4ja" />
+        <child id="674965200416911753" name="parameterValues" index="7L4jf" />
       </concept>
       <concept id="7334674565657456993" name="BSWModuleDescription.structure.ValuesEntry" flags="ng" index="1SOKV9">
         <child id="7334674565657456994" name="modules" index="1SOKVa" />
@@ -57,27 +64,60 @@
   </registry>
   <node concept="1SOKV9" id="7KKietr2boI">
     <property role="3GE5qa" value="mz.another.pacakge" />
-    <node concept="7MCFo" id="2j7NeO21vj9" role="1SOKVa">
-      <property role="jXZ$4" value="OS_0" />
-      <property role="TrG5h" value="OS" />
+    <node concept="7MCFo" id="3oIlr307HfJ" role="1SOKVa">
+      <property role="TrG5h" value="Os" />
       <ref role="7MCEO" node="2j7NeO21viK" resolve="Os" />
-      <node concept="7MCFW" id="5D3OXK43AEo" role="7L4j0">
+      <node concept="7MCFW" id="7Ouvy0Cyflr" role="7L4j0">
+        <property role="TrG5h" value="OsTask_1" />
+        <ref role="7L4j4" node="2j7NeO21viQ" resolve="OsTask" />
+        <node concept="7MCEg" id="7Ouvy0Cyflz" role="7L4jf">
+          <property role="1utLuv" value="2" />
+          <ref role="7L4j2" node="5D3OXK4hduY" resolve="OsTaskPriority" />
+        </node>
+      </node>
+      <node concept="7MCFW" id="3oIlr307HfQ" role="7L4j0">
         <property role="TrG5h" value="OsTask_0" />
         <ref role="7L4j4" node="2j7NeO21viQ" resolve="OsTask" />
+        <node concept="7MCEg" id="3oIlr307HfR" role="7L4jf">
+          <property role="1utLuv" value="2" />
+          <ref role="7L4j2" node="5D3OXK4hduY" resolve="OsTaskPriority" />
+        </node>
+        <node concept="7L4iL" id="3oIlr307HfT" role="7L4iO">
+          <property role="TrG5h" value="OsTaskEventRef" />
+          <ref role="7LONE" node="2j7NeO21viU" resolve="OsTaskEventRef" />
+        </node>
       </node>
-      <node concept="7MCFW" id="5D3OXK43AEp" role="7L4j0">
+      <node concept="7MCFW" id="3oIlr307HfU" role="7L4j0">
+        <property role="TrG5h" value="OsApplication_0" />
+        <ref role="7L4j4" node="5D3OXK43CjZ" resolve="OsApplication" />
+      </node>
+      <node concept="7MCFW" id="3oIlr307HfV" role="7L4j0">
         <property role="TrG5h" value="OsEvent_0" />
         <ref role="7L4j4" node="2j7NeO21vj2" resolve="OsEvent" />
+        <node concept="7MCEg" id="3oIlr307HfW" role="7L4jf">
+          <property role="1utLuv" value="1" />
+          <ref role="7L4j2" node="5D3OXK4hduU" resolve="Test" />
+        </node>
       </node>
     </node>
-    <node concept="7MCFo" id="2j7NeO20Sz$" role="1SOKVa">
-      <property role="jXZ$4" value="Rte_0" />
+    <node concept="7MCFo" id="3oIlr307Hfi" role="1SOKVa">
       <property role="TrG5h" value="Rte" />
       <ref role="7MCEO" node="2j7NeO21viA" resolve="Rte" />
-      <node concept="7MCFW" id="2j7NeO21bcF" role="7L4j0">
-        <property role="jXZ$4" value="RteSwCompponentInstance_0" />
-        <property role="TrG5h" value="RteSwCompponentInstance_0" />
-        <ref role="7L4j4" node="2j7NeO21viC" />
+      <node concept="7MCFW" id="3oIlr307Hfv" role="7L4j0">
+        <property role="TrG5h" value="test" />
+        <ref role="7L4j4" node="2j7NeO21viC" resolve="RteSwComponentInstance" />
+        <node concept="7MCEg" id="3oIlr307Hf_" role="7L4jf">
+          <property role="1utLuv" value="1" />
+          <ref role="7L4j2" node="5D3OXK4hduW" resolve="RtePosition" />
+        </node>
+        <node concept="7MCFW" id="3oIlr307HfB" role="7L4ja">
+          <property role="TrG5h" value="TT" />
+          <ref role="7L4j4" node="2j7NeO21viE" resolve="RteEventToTaskMapping" />
+          <node concept="7L4iL" id="3oIlr307HfD" role="7L4iO">
+            <property role="TrG5h" value="RteMappedToTaskRef" />
+            <ref role="7LONE" node="2j7NeO21viG" resolve="RteMappedToTaskRef" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
