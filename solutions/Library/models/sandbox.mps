@@ -65,6 +65,110 @@
   </registry>
   <node concept="1SOKV9" id="7KKietr2boI">
     <property role="3GE5qa" value="mz.another.pacakge" />
+    <node concept="7MCFo" id="7Ouvy0DixCs" role="1SOKVa">
+      <property role="TrG5h" value="Rte" />
+      <ref role="7MCEO" node="7Ouvy0CGSRb" resolve="Rte" />
+      <node concept="7MCEg" id="7Ouvy0DixCF" role="7L4jf">
+        <property role="1utLuv" value="1" />
+        <property role="TrG5h" value="Test" />
+        <ref role="7L4j2" node="7Ouvy0CGSRd" resolve="Test" />
+      </node>
+      <node concept="7L4iL" id="7Ouvy0DixCG" role="7L4iO">
+        <ref role="7LONE" node="7Ouvy0CGSRf" resolve="Test2" />
+      </node>
+      <node concept="7MCFW" id="7Ouvy0DixCH" role="7L4j0">
+        <property role="TrG5h" value="Rte_3_0" />
+        <ref role="7L4j4" node="7Ouvy0CGSRt" resolve="Rte_3" />
+        <node concept="7MCEg" id="7Ouvy0DixCI" role="7L4jf">
+          <property role="1utLuv" value="3" />
+          <property role="TrG5h" value="Test8" />
+          <ref role="7L4j2" node="7Ouvy0CGSRB" resolve="Test8" />
+        </node>
+        <node concept="7L4iL" id="7Ouvy0DixCJ" role="7L4iO">
+          <ref role="7LONE" node="7Ouvy0CGSR_" resolve="Test7" />
+        </node>
+      </node>
+      <node concept="7MCFW" id="7Ouvy0DixCK" role="7L4j0">
+        <property role="TrG5h" value="Rte_1_0" />
+        <ref role="7L4j4" node="7Ouvy0CGSRh" resolve="Rte_1" />
+        <node concept="7MCEg" id="7Ouvy0DixCL" role="7L4jf">
+          <property role="1utLuv" value="2" />
+          <property role="TrG5h" value="Test3" />
+          <ref role="7L4j2" node="7Ouvy0CGSRj" resolve="Test3" />
+        </node>
+        <node concept="7L4iL" id="7Ouvy0DixCM" role="7L4iO">
+          <ref role="7LONE" node="7Ouvy0CGSRl" resolve="Test4" />
+        </node>
+        <node concept="7MCFW" id="7Ouvy0DixCN" role="7L4ja">
+          <property role="TrG5h" value="Rte_2_0" />
+          <ref role="7L4j4" node="7Ouvy0CGSRn" resolve="Rte_2" />
+          <node concept="7MCEg" id="7Ouvy0DixCO" role="7L4jf">
+            <property role="1utLuv" value="1" />
+            <property role="TrG5h" value="Test5" />
+            <ref role="7L4j2" node="7Ouvy0CGSRp" resolve="Test5" />
+          </node>
+          <node concept="7L4iL" id="7Ouvy0DixCP" role="7L4iO">
+            <ref role="7LONE" node="7Ouvy0CGSRr" resolve="Test6" />
+          </node>
+          <node concept="7MCFW" id="7Ouvy0DixCQ" role="7L4ja">
+            <property role="TrG5h" value="Rte_4_0" />
+            <ref role="7L4j4" node="7Ouvy0CVh0O" resolve="Rte_4" />
+          </node>
+        </node>
+      </node>
+      <node concept="7MCEg" id="7Ouvy0DixDh" role="7L4jf">
+        <property role="1utLuv" value="1" />
+        <property role="TrG5h" value="Test" />
+        <ref role="7L4j2" node="7Ouvy0CGSRd" resolve="Test" />
+      </node>
+      <node concept="7L4iL" id="7Ouvy0DixDi" role="7L4iO">
+        <ref role="7LONE" node="7Ouvy0CGSRf" resolve="Test2" />
+      </node>
+      <node concept="7MCFW" id="7Ouvy0DixDj" role="7L4j0">
+        <property role="TrG5h" value="Rte_3_0" />
+        <ref role="7L4j4" node="7Ouvy0CGSRt" resolve="Rte_3" />
+        <node concept="7MCEg" id="7Ouvy0DixDk" role="7L4jf">
+          <property role="1utLuv" value="3" />
+          <property role="TrG5h" value="Test8" />
+          <ref role="7L4j2" node="7Ouvy0CGSRB" resolve="Test8" />
+        </node>
+        <node concept="7L4iL" id="7Ouvy0DixDl" role="7L4iO">
+          <ref role="7LONE" node="7Ouvy0CGSR_" resolve="Test7" />
+        </node>
+      </node>
+      <node concept="7MCFW" id="7Ouvy0DixDm" role="7L4j0">
+        <property role="TrG5h" value="Test_0" />
+        <ref role="7L4j4" node="7Ouvy0DixD5" resolve="Test" />
+      </node>
+      <node concept="7MCFW" id="7Ouvy0DixDn" role="7L4j0">
+        <property role="TrG5h" value="Rte_1_0" />
+        <ref role="7L4j4" node="7Ouvy0CGSRh" resolve="Rte_1" />
+        <node concept="7MCEg" id="7Ouvy0DixDo" role="7L4jf">
+          <property role="1utLuv" value="2" />
+          <property role="TrG5h" value="Test3" />
+          <ref role="7L4j2" node="7Ouvy0CGSRj" resolve="Test3" />
+        </node>
+        <node concept="7L4iL" id="7Ouvy0DixDp" role="7L4iO">
+          <ref role="7LONE" node="7Ouvy0CGSRl" resolve="Test4" />
+        </node>
+        <node concept="7MCFW" id="7Ouvy0DixDq" role="7L4ja">
+          <property role="TrG5h" value="Rte_2_0" />
+          <ref role="7L4j4" node="7Ouvy0CGSRn" resolve="Rte_2" />
+          <node concept="7MCEg" id="7Ouvy0DixDr" role="7L4jf">
+            <property role="1utLuv" value="1" />
+            <property role="TrG5h" value="Test5" />
+            <ref role="7L4j2" node="7Ouvy0CGSRp" resolve="Test5" />
+          </node>
+          <node concept="7L4iL" id="7Ouvy0DixDs" role="7L4iO">
+            <ref role="7LONE" node="7Ouvy0CGSRr" resolve="Test6" />
+          </node>
+          <node concept="7MCFW" id="7Ouvy0DixDt" role="7L4ja">
+            <property role="TrG5h" value="Rte_4_0" />
+            <ref role="7L4j4" node="7Ouvy0CVh0O" resolve="Rte_4" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="7MCFo" id="7Ouvy0CUmos" role="1SOKVa">
       <property role="TrG5h" value="Rte" />
       <ref role="7MCEO" node="7Ouvy0CGSRb" resolve="Rte" />
@@ -145,6 +249,9 @@
         <property role="jXZ$1" value="1" />
         <ref role="7Lzr$" node="7Ouvy0CGSRt" resolve="Rte_3" />
       </node>
+      <node concept="jXVW4" id="7Ouvy0DixD5" role="jXVUU">
+        <property role="TrG5h" value="Test" />
+      </node>
       <node concept="jXVW4" id="7Ouvy0CGSRh" role="jXVUU">
         <property role="TrG5h" value="Rte_1" />
         <node concept="jXVSC" id="7Ouvy0CGSRj" role="_dvFY">
@@ -173,6 +280,15 @@
             <ref role="7Lzr$" node="7Ouvy0CGSRt" resolve="Rte_3" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1SOKVF" id="7Ouvy0D6dvs">
+    <property role="3GE5qa" value="mz.virtual.package" />
+    <node concept="jXVLJ" id="7Ouvy0D6F6c" role="1SOKVR">
+      <property role="TrG5h" value="Rte" />
+      <node concept="jXVW4" id="7Ouvy0D6F6e" role="jXVUU">
+        <property role="TrG5h" value="Rte1" />
       </node>
     </node>
   </node>
