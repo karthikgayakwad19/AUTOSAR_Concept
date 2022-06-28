@@ -712,12 +712,12 @@
                     <node concept="3cpWsn" id="5D3OXK4c2La" role="3cpWs9">
                       <property role="TrG5h" value="referencesNode" />
                       <node concept="3Tqbb2" id="5D3OXK4c2Lb" role="1tU5fm">
-                        <ref role="ehGHo" to="unt2:_tXkoeAr7R" resolve="ReferenceValue" />
+                        <ref role="ehGHo" to="unt2:_tXkoeAr7R" resolve="ComplexReferenceValue" />
                       </node>
                       <node concept="2ShNRf" id="5D3OXK4c2Lc" role="33vP2m">
                         <node concept="3zrR0B" id="5D3OXK4c2Ld" role="2ShVmc">
                           <node concept="3Tqbb2" id="5D3OXK4c2Le" role="3zrR0E">
-                            <ref role="ehGHo" to="unt2:_tXkoeAr7R" resolve="ReferenceValue" />
+                            <ref role="ehGHo" to="unt2:_tXkoeAr7R" resolve="ComplexReferenceValue" />
                           </node>
                         </node>
                       </node>
@@ -816,12 +816,12 @@
                     <node concept="3cpWsn" id="5D3OXK4sZwU" role="3cpWs9">
                       <property role="TrG5h" value="parameterValue" />
                       <node concept="3Tqbb2" id="5D3OXK4sZwV" role="1tU5fm">
-                        <ref role="ehGHo" to="unt2:_tXkoe_RZm" resolve="ParameterValue" />
+                        <ref role="ehGHo" to="unt2:_tXkoe_RZm" resolve="AlphaNumericValue" />
                       </node>
                       <node concept="2ShNRf" id="5D3OXK4sZwW" role="33vP2m">
                         <node concept="3zrR0B" id="5D3OXK4sZwX" role="2ShVmc">
                           <node concept="3Tqbb2" id="5D3OXK4sZwY" role="3zrR0E">
-                            <ref role="ehGHo" to="unt2:_tXkoe_RZm" resolve="ParameterValue" />
+                            <ref role="ehGHo" to="unt2:_tXkoe_RZm" resolve="AlphaNumericValue" />
                           </node>
                         </node>
                       </node>

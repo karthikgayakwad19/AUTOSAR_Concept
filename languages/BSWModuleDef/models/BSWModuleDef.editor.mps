@@ -43,6 +43,8 @@
       <concept id="7459370737647652609" name="jetbrains.mps.lang.plugin.structure.CreateBlock" flags="in" index="1YUSOF" />
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
@@ -63,6 +65,10 @@
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
@@ -410,7 +416,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3gKCqWBM0_O">
-    <ref role="1XX52x" to="o4r4:3gKCqWBLLV6" resolve="ParameterDef" />
+    <ref role="1XX52x" to="o4r4:3gKCqWBLLV6" resolve="AlphaNumericDef" />
     <node concept="3EZMnI" id="5D3OXK49uxl" role="2wV5jI">
       <node concept="l2Vlx" id="5D3OXK49uxm" role="2iSdaV" />
       <node concept="3F0A7n" id="5D3OXK49uxn" role="3EZMnx">
@@ -463,7 +469,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2j7NeO1X4Zg">
-    <ref role="1XX52x" to="o4r4:3gKCqWBLPyD" resolve="RefereneceDef" />
+    <ref role="1XX52x" to="o4r4:3gKCqWBLPyD" resolve="ComplexRefereneceDef" />
     <node concept="3EZMnI" id="2j7NeO1X4Zi" role="2wV5jI">
       <node concept="l2Vlx" id="2j7NeO1X4Zj" role="2iSdaV" />
       <node concept="3F0A7n" id="2j7NeO1X4Zk" role="3EZMnx">
@@ -610,6 +616,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="22mcaB" id="7Ouvy0DkpH5">
+    <ref role="aqKnT" to="o4r4:3gKCqWBLLR0" resolve="ModuleDef" />
+    <node concept="22hDWj" id="7Ouvy0DkpUP" role="22hAXT" />
   </node>
 </model>
 

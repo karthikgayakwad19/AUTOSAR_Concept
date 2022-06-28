@@ -72,8 +72,8 @@
   </node>
   <node concept="1TIwiD" id="3gKCqWBLLV6">
     <property role="EcuMT" value="3760683462513073862" />
-    <property role="TrG5h" value="ParameterDef" />
-    <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
+    <property role="TrG5h" value="AlphaNumericDef" />
+    <ref role="1TJDcQ" node="7Ouvy0Dj2uZ" resolve="ParameterDef" />
     <node concept="1TJgyi" id="3gKCqWBLPyT" role="1TKVEl">
       <property role="IQ2nx" value="3760683462513088697" />
       <property role="TrG5h" value="defaultValue" />
@@ -86,12 +86,12 @@
   <node concept="1TIwiD" id="3gKCqWBLLY7">
     <property role="EcuMT" value="3760683462513074055" />
     <property role="TrG5h" value="IntegerParameterDef" />
-    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="ParameterDef" />
+    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="AlphaNumericDef" />
   </node>
   <node concept="1TIwiD" id="3gKCqWBLLY8">
     <property role="EcuMT" value="3760683462513074056" />
     <property role="TrG5h" value="BooleanParameterDef" />
-    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="ParameterDef" />
+    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="AlphaNumericDef" />
     <node concept="1TJgyi" id="3gKCqWBLPyV" role="1TKVEl">
       <property role="IQ2nx" value="3760683462513088699" />
       <property role="TrG5h" value="value" />
@@ -117,8 +117,8 @@
   </node>
   <node concept="1TIwiD" id="3gKCqWBLPyD">
     <property role="EcuMT" value="3760683462513088681" />
-    <property role="TrG5h" value="RefereneceDef" />
-    <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
+    <property role="TrG5h" value="ComplexRefereneceDef" />
+    <ref role="1TJDcQ" node="7Ouvy0Dj2uZ" resolve="ParameterDef" />
     <node concept="1TJgyj" id="_tXkoeAWey" role="1TKVEi">
       <property role="IQ2ns" value="674965200417047458" />
       <property role="20kJfa" value="destination" />
@@ -168,14 +168,14 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3gKCqWBLLV6" resolve="ParameterDef" />
+      <ref role="20lvS9" node="3gKCqWBLLV6" resolve="AlphaNumericDef" />
     </node>
     <node concept="1TJgyj" id="2j7NeO1WzoK" role="1TKVEi">
       <property role="IQ2ns" value="2650312224042792496" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="references" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3gKCqWBLPyD" resolve="RefereneceDef" />
+      <ref role="20lvS9" node="3gKCqWBLPyD" resolve="ComplexRefereneceDef" />
     </node>
     <node concept="1TJgyi" id="3gKCqWBLPyG" role="1TKVEl">
       <property role="IQ2nx" value="3760683462513088684" />
@@ -194,12 +194,12 @@
   <node concept="1TIwiD" id="6n9ZUwt6qoZ">
     <property role="EcuMT" value="7334674565657372223" />
     <property role="TrG5h" value="TextualParameterDef" />
-    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="ParameterDef" />
+    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="AlphaNumericDef" />
   </node>
   <node concept="1TIwiD" id="6n9ZUwt6qpr">
     <property role="EcuMT" value="7334674565657372251" />
     <property role="TrG5h" value="EnumParameterDef" />
-    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="ParameterDef" />
+    <ref role="1TJDcQ" node="3gKCqWBLLV6" resolve="AlphaNumericDef" />
   </node>
   <node concept="1TIwiD" id="6n9ZUwt6J53">
     <property role="EcuMT" value="7334674565657456963" />
@@ -213,6 +213,11 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3gKCqWBLLR0" resolve="ModuleDef" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7Ouvy0Dj2uZ">
+    <property role="EcuMT" value="9015782180639221695" />
+    <property role="TrG5h" value="ParameterDef" />
+    <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
   </node>
 </model>
 

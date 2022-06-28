@@ -4,6 +4,7 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="e3030623-38bb-48cb-ae7e-f3be4cd83f0e" name="BSWModuleDef" version="0" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -50,6 +51,7 @@
     <node concept="1TJgyj" id="_tXkoe_RZM" role="1TKVEi">
       <property role="IQ2ns" value="674965200416767986" />
       <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="o4r4:3gKCqWBLLR0" resolve="ModuleDef" />
     </node>
     <node concept="1TJgyj" id="_tXkoeAr66" role="1TKVEi">
@@ -80,33 +82,28 @@
   </node>
   <node concept="1TIwiD" id="_tXkoe_RZm">
     <property role="EcuMT" value="674965200416767958" />
-    <property role="TrG5h" value="ParameterValue" />
-    <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARVals" />
+    <property role="TrG5h" value="AlphaNumericValue" />
+    <ref role="1TJDcQ" node="7Ouvy0Dji98" resolve="ParameterValue" />
     <node concept="1TJgyj" id="_tXkoeAr64" role="1TKVEi">
       <property role="IQ2ns" value="674965200416911748" />
       <property role="20kJfa" value="definition" />
       <ref role="20lvS9" to="o4r4:3gKCqWBLLV6" resolve="ParameterDef" />
     </node>
-    <node concept="1TJgyi" id="5D3OXK4dch3" role="1TKVEl">
-      <property role="IQ2nx" value="6504275228769961027" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="_tXkoeAr6M">
     <property role="EcuMT" value="674965200416911794" />
     <property role="TrG5h" value="TextualParamValue" />
-    <ref role="1TJDcQ" node="_tXkoe_RZm" resolve="ParameterValue" />
+    <ref role="1TJDcQ" node="_tXkoe_RZm" resolve="AlphaNumericValue" />
   </node>
   <node concept="1TIwiD" id="_tXkoeAr7e">
     <property role="EcuMT" value="674965200416911822" />
     <property role="TrG5h" value="NumericalParamValue" />
-    <ref role="1TJDcQ" node="_tXkoe_RZm" resolve="ParameterValue" />
+    <ref role="1TJDcQ" node="_tXkoe_RZm" resolve="AlphaNumericValue" />
   </node>
   <node concept="1TIwiD" id="_tXkoeAr7R">
     <property role="EcuMT" value="674965200416911863" />
-    <property role="TrG5h" value="ReferenceValue" />
-    <ref role="1TJDcQ" to="o4r4:6n9ZUwt3NQf" resolve="AUTOSAR" />
+    <property role="TrG5h" value="ComplexReferenceValue" />
+    <ref role="1TJDcQ" node="7Ouvy0Dji98" resolve="ParameterValue" />
     <node concept="1TJgyj" id="_tXkoeAFAE" role="1TKVEi">
       <property role="IQ2ns" value="674965200416979370" />
       <property role="20kJfa" value="value" />
@@ -152,14 +149,14 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="parameterValues" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="_tXkoe_RZm" resolve="ParameterValue" />
+      <ref role="20lvS9" node="_tXkoe_RZm" resolve="AlphaNumericValue" />
     </node>
     <node concept="1TJgyj" id="_tXkoeAr7M" role="1TKVEi">
       <property role="IQ2ns" value="674965200416911858" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="referenceValues" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="_tXkoeAr7R" resolve="ReferenceValue" />
+      <ref role="20lvS9" node="_tXkoeAr7R" resolve="ComplexReferenceValue" />
     </node>
     <node concept="1TJgyi" id="3gKCqWBLPyG" role="1TKVEl">
       <property role="IQ2nx" value="3760683462513088684" />
@@ -173,6 +170,16 @@
     </node>
     <node concept="PrWs8" id="2j7NeO21DBK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Ouvy0Dji98">
+    <property role="EcuMT" value="9015782180639285832" />
+    <property role="TrG5h" value="ParameterValue" />
+    <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARVals" />
+    <node concept="1TJgyi" id="5D3OXK4dch3" role="1TKVEl">
+      <property role="IQ2nx" value="6504275228769961027" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

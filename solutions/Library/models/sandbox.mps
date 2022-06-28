@@ -15,10 +15,10 @@
       <concept id="3760683462513073835" name="BSWModuleDef.structure.ContainerDef" flags="ng" index="jXVW4">
         <child id="3760683462513074050" name="subContainers" index="jXVSH" />
       </concept>
-      <concept id="3760683462513073862" name="BSWModuleDef.structure.ParameterDef" flags="ng" index="jXVXD">
+      <concept id="3760683462513073862" name="BSWModuleDef.structure.AlphaNumericDef" flags="ng" index="jXVXD">
         <property id="3760683462513088697" name="defaultValue" index="jXZ$m" />
       </concept>
-      <concept id="3760683462513088681" name="BSWModuleDef.structure.RefereneceDef" flags="ng" index="jXZ$6">
+      <concept id="3760683462513088681" name="BSWModuleDef.structure.ComplexRefereneceDef" flags="ng" index="jXZ$6">
         <reference id="674965200417047458" name="destination" index="7Lzr$" />
       </concept>
       <concept id="7334674565656690063" name="BSWModuleDef.structure.AUTOSARDefs" flags="ng" index="1SLG8B">
@@ -31,11 +31,10 @@
       </concept>
     </language>
     <language id="ef22f920-a15b-4c66-a06e-e0c4aea10605" name="BSWModuleDescription">
-      <concept id="674965200416911863" name="BSWModuleDescription.structure.ReferenceValue" flags="ng" index="7L4iL">
+      <concept id="674965200416911863" name="BSWModuleDescription.structure.ComplexReferenceValue" flags="ng" index="7L4iL">
         <reference id="674965200416979372" name="definition" index="7LONE" />
       </concept>
-      <concept id="674965200416767958" name="BSWModuleDescription.structure.ParameterValue" flags="ng" index="7MCEg">
-        <property id="6504275228769961027" name="value" index="1utLuv" />
+      <concept id="674965200416767958" name="BSWModuleDescription.structure.AlphaNumericValue" flags="ng" index="7MCEg">
         <reference id="674965200416911748" name="definition" index="7L4j2" />
       </concept>
       <concept id="674965200416767902" name="BSWModuleDescription.structure.ModuleValue" flags="ng" index="7MCFo">
@@ -45,6 +44,9 @@
       <concept id="674965200416767930" name="BSWModuleDescription.structure.ContainerValue" flags="ng" index="7MCFW">
         <reference id="674965200416911746" name="definition" index="7L4j4" />
         <child id="674965200416911756" name="subContainers" index="7L4ja" />
+      </concept>
+      <concept id="9015782180639285832" name="BSWModuleDescription.structure.ParameterValue" flags="ng" index="1kkPLC">
+        <property id="6504275228769961027" name="value" index="1utLuv" />
       </concept>
       <concept id="7334674565656690063" name="BSWModuleDescription.structure.AUTOSARVals" flags="ng" index="1SLG8C">
         <child id="674965200416911858" name="referenceValues" index="7L4iO" />
@@ -64,157 +66,57 @@
     </language>
   </registry>
   <node concept="1SOKV9" id="7KKietr2boI">
-    <property role="3GE5qa" value="mz.another.pacakge" />
-    <node concept="7MCFo" id="7Ouvy0DixCs" role="1SOKVa">
-      <property role="TrG5h" value="Rte" />
-      <ref role="7MCEO" node="7Ouvy0CGSRb" resolve="Rte" />
-      <node concept="7MCEg" id="7Ouvy0DixCF" role="7L4jf">
+    <property role="3GE5qa" value="mz.another.pacakge.new" />
+    <node concept="7MCFo" id="7Ouvy0DB8JB" role="1SOKVa">
+      <property role="TrG5h" value="Rte1_0" />
+      <ref role="7MCEO" node="7Ouvy0CGSRb" resolve="Rte1" />
+      <node concept="7MCEg" id="7Ouvy0DB8JC" role="7L4jf">
         <property role="1utLuv" value="1" />
         <property role="TrG5h" value="Test" />
         <ref role="7L4j2" node="7Ouvy0CGSRd" resolve="Test" />
       </node>
-      <node concept="7L4iL" id="7Ouvy0DixCG" role="7L4iO">
+      <node concept="7L4iL" id="7Ouvy0DB8JD" role="7L4iO">
         <ref role="7LONE" node="7Ouvy0CGSRf" resolve="Test2" />
       </node>
-      <node concept="7MCFW" id="7Ouvy0DixCH" role="7L4j0">
+      <node concept="7MCFW" id="7Ouvy0DB8JE" role="7L4j0">
         <property role="TrG5h" value="Rte_3_0" />
         <ref role="7L4j4" node="7Ouvy0CGSRt" resolve="Rte_3" />
-        <node concept="7MCEg" id="7Ouvy0DixCI" role="7L4jf">
+        <node concept="7MCEg" id="7Ouvy0DB8JF" role="7L4jf">
           <property role="1utLuv" value="3" />
           <property role="TrG5h" value="Test8" />
           <ref role="7L4j2" node="7Ouvy0CGSRB" resolve="Test8" />
         </node>
-        <node concept="7L4iL" id="7Ouvy0DixCJ" role="7L4iO">
+        <node concept="7L4iL" id="7Ouvy0DB8JG" role="7L4iO">
           <ref role="7LONE" node="7Ouvy0CGSR_" resolve="Test7" />
         </node>
       </node>
-      <node concept="7MCFW" id="7Ouvy0DixCK" role="7L4j0">
-        <property role="TrG5h" value="Rte_1_0" />
-        <ref role="7L4j4" node="7Ouvy0CGSRh" resolve="Rte_1" />
-        <node concept="7MCEg" id="7Ouvy0DixCL" role="7L4jf">
-          <property role="1utLuv" value="2" />
-          <property role="TrG5h" value="Test3" />
-          <ref role="7L4j2" node="7Ouvy0CGSRj" resolve="Test3" />
-        </node>
-        <node concept="7L4iL" id="7Ouvy0DixCM" role="7L4iO">
-          <ref role="7LONE" node="7Ouvy0CGSRl" resolve="Test4" />
-        </node>
-        <node concept="7MCFW" id="7Ouvy0DixCN" role="7L4ja">
-          <property role="TrG5h" value="Rte_2_0" />
-          <ref role="7L4j4" node="7Ouvy0CGSRn" resolve="Rte_2" />
-          <node concept="7MCEg" id="7Ouvy0DixCO" role="7L4jf">
-            <property role="1utLuv" value="1" />
-            <property role="TrG5h" value="Test5" />
-            <ref role="7L4j2" node="7Ouvy0CGSRp" resolve="Test5" />
-          </node>
-          <node concept="7L4iL" id="7Ouvy0DixCP" role="7L4iO">
-            <ref role="7LONE" node="7Ouvy0CGSRr" resolve="Test6" />
-          </node>
-          <node concept="7MCFW" id="7Ouvy0DixCQ" role="7L4ja">
-            <property role="TrG5h" value="Rte_4_0" />
-            <ref role="7L4j4" node="7Ouvy0CVh0O" resolve="Rte_4" />
-          </node>
-        </node>
-      </node>
-      <node concept="7MCEg" id="7Ouvy0DixDh" role="7L4jf">
-        <property role="1utLuv" value="1" />
-        <property role="TrG5h" value="Test" />
-        <ref role="7L4j2" node="7Ouvy0CGSRd" resolve="Test" />
-      </node>
-      <node concept="7L4iL" id="7Ouvy0DixDi" role="7L4iO">
-        <ref role="7LONE" node="7Ouvy0CGSRf" resolve="Test2" />
-      </node>
-      <node concept="7MCFW" id="7Ouvy0DixDj" role="7L4j0">
-        <property role="TrG5h" value="Rte_3_0" />
-        <ref role="7L4j4" node="7Ouvy0CGSRt" resolve="Rte_3" />
-        <node concept="7MCEg" id="7Ouvy0DixDk" role="7L4jf">
-          <property role="1utLuv" value="3" />
-          <property role="TrG5h" value="Test8" />
-          <ref role="7L4j2" node="7Ouvy0CGSRB" resolve="Test8" />
-        </node>
-        <node concept="7L4iL" id="7Ouvy0DixDl" role="7L4iO">
-          <ref role="7LONE" node="7Ouvy0CGSR_" resolve="Test7" />
-        </node>
-      </node>
-      <node concept="7MCFW" id="7Ouvy0DixDm" role="7L4j0">
+      <node concept="7MCFW" id="7Ouvy0DB8JH" role="7L4j0">
         <property role="TrG5h" value="Test_0" />
         <ref role="7L4j4" node="7Ouvy0DixD5" resolve="Test" />
       </node>
-      <node concept="7MCFW" id="7Ouvy0DixDn" role="7L4j0">
+      <node concept="7MCFW" id="7Ouvy0DB8JI" role="7L4j0">
         <property role="TrG5h" value="Rte_1_0" />
         <ref role="7L4j4" node="7Ouvy0CGSRh" resolve="Rte_1" />
-        <node concept="7MCEg" id="7Ouvy0DixDo" role="7L4jf">
+        <node concept="7MCEg" id="7Ouvy0DB8JJ" role="7L4jf">
           <property role="1utLuv" value="2" />
           <property role="TrG5h" value="Test3" />
           <ref role="7L4j2" node="7Ouvy0CGSRj" resolve="Test3" />
         </node>
-        <node concept="7L4iL" id="7Ouvy0DixDp" role="7L4iO">
+        <node concept="7L4iL" id="7Ouvy0DB8JK" role="7L4iO">
           <ref role="7LONE" node="7Ouvy0CGSRl" resolve="Test4" />
         </node>
-        <node concept="7MCFW" id="7Ouvy0DixDq" role="7L4ja">
+        <node concept="7MCFW" id="7Ouvy0DB8JL" role="7L4ja">
           <property role="TrG5h" value="Rte_2_0" />
           <ref role="7L4j4" node="7Ouvy0CGSRn" resolve="Rte_2" />
-          <node concept="7MCEg" id="7Ouvy0DixDr" role="7L4jf">
+          <node concept="7MCEg" id="7Ouvy0DB8JM" role="7L4jf">
             <property role="1utLuv" value="1" />
             <property role="TrG5h" value="Test5" />
             <ref role="7L4j2" node="7Ouvy0CGSRp" resolve="Test5" />
           </node>
-          <node concept="7L4iL" id="7Ouvy0DixDs" role="7L4iO">
+          <node concept="7L4iL" id="7Ouvy0DB8JN" role="7L4iO">
             <ref role="7LONE" node="7Ouvy0CGSRr" resolve="Test6" />
           </node>
-          <node concept="7MCFW" id="7Ouvy0DixDt" role="7L4ja">
-            <property role="TrG5h" value="Rte_4_0" />
-            <ref role="7L4j4" node="7Ouvy0CVh0O" resolve="Rte_4" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="7MCFo" id="7Ouvy0CUmos" role="1SOKVa">
-      <property role="TrG5h" value="Rte" />
-      <ref role="7MCEO" node="7Ouvy0CGSRb" resolve="Rte" />
-      <node concept="7MCEg" id="7Ouvy0CUmou" role="7L4jf">
-        <property role="1utLuv" value="1" />
-        <property role="TrG5h" value="Test" />
-        <ref role="7L4j2" node="7Ouvy0CGSRd" resolve="Test" />
-      </node>
-      <node concept="7L4iL" id="7Ouvy0CUmov" role="7L4iO">
-        <ref role="7LONE" node="7Ouvy0CGSRf" resolve="Test2" />
-      </node>
-      <node concept="7MCFW" id="7Ouvy0CUmow" role="7L4j0">
-        <property role="TrG5h" value="Rte_3_0" />
-        <ref role="7L4j4" node="7Ouvy0CGSRt" resolve="Rte_3" />
-        <node concept="7MCEg" id="7Ouvy0CUmox" role="7L4jf">
-          <property role="1utLuv" value="3" />
-          <property role="TrG5h" value="Test8" />
-          <ref role="7L4j2" node="7Ouvy0CGSRB" resolve="Test8" />
-        </node>
-        <node concept="7L4iL" id="7Ouvy0CUmoy" role="7L4iO">
-          <ref role="7LONE" node="7Ouvy0CGSR_" resolve="Test7" />
-        </node>
-      </node>
-      <node concept="7MCFW" id="7Ouvy0CUmoz" role="7L4j0">
-        <property role="TrG5h" value="Rte_1_0" />
-        <ref role="7L4j4" node="7Ouvy0CGSRh" resolve="Rte_1" />
-        <node concept="7MCEg" id="7Ouvy0CUmo$" role="7L4jf">
-          <property role="1utLuv" value="2" />
-          <property role="TrG5h" value="Test3" />
-          <ref role="7L4j2" node="7Ouvy0CGSRj" resolve="Test3" />
-        </node>
-        <node concept="7L4iL" id="7Ouvy0CUmo_" role="7L4iO">
-          <ref role="7LONE" node="7Ouvy0CGSRl" resolve="Test4" />
-        </node>
-        <node concept="7MCFW" id="7Ouvy0CUmoA" role="7L4ja">
-          <property role="TrG5h" value="Rte_2_0" />
-          <ref role="7L4j4" node="7Ouvy0CGSRn" resolve="Rte_2" />
-          <node concept="7MCEg" id="7Ouvy0CUmoB" role="7L4jf">
-            <property role="1utLuv" value="1" />
-            <property role="TrG5h" value="Test5" />
-            <ref role="7L4j2" node="7Ouvy0CGSRp" resolve="Test5" />
-          </node>
-          <node concept="7L4iL" id="7Ouvy0CUmoC" role="7L4iO">
-            <ref role="7LONE" node="7Ouvy0CGSRr" resolve="Test6" />
-          </node>
-          <node concept="7MCFW" id="7Ouvy0CVh0S" role="7L4ja">
+          <node concept="7MCFW" id="7Ouvy0DB8JO" role="7L4ja">
             <property role="TrG5h" value="Rte_4_0" />
             <ref role="7L4j4" node="7Ouvy0CVh0O" resolve="Rte_4" />
           </node>
@@ -223,9 +125,12 @@
     </node>
   </node>
   <node concept="1SOKVF" id="2j7NeO21vi_">
-    <property role="3GE5qa" value="mz.virtual.package" />
+    <property role="3GE5qa" value="mz.virtual.package.new" />
+    <node concept="jXVLJ" id="7Ouvy0DA$yM" role="1SOKVR">
+      <property role="TrG5h" value="Rte2" />
+    </node>
     <node concept="jXVLJ" id="7Ouvy0CGSRb" role="1SOKVR">
-      <property role="TrG5h" value="Rte" />
+      <property role="TrG5h" value="Rte1" />
       <node concept="jXVW4" id="7Ouvy0CGSRt" role="jXVUU">
         <property role="TrG5h" value="Rte_3" />
         <node concept="jXZ$6" id="7Ouvy0CGSR_" role="_dvFt">
@@ -285,10 +190,91 @@
   </node>
   <node concept="1SOKVF" id="7Ouvy0D6dvs">
     <property role="3GE5qa" value="mz.virtual.package" />
+    <node concept="jXVLJ" id="7Ouvy0D$cJB" role="1SOKVR">
+      <property role="TrG5h" value="Rte4" />
+    </node>
     <node concept="jXVLJ" id="7Ouvy0D6F6c" role="1SOKVR">
-      <property role="TrG5h" value="Rte" />
+      <property role="TrG5h" value="Rte3" />
       <node concept="jXVW4" id="7Ouvy0D6F6e" role="jXVUU">
         <property role="TrG5h" value="Rte1" />
+      </node>
+    </node>
+  </node>
+  <node concept="1SOKV9" id="7Ouvy0Dkp1s">
+    <property role="3GE5qa" value="mz.another.pacakge" />
+    <node concept="7MCFo" id="7Ouvy0Dmzma" role="1SOKVa">
+      <property role="TrG5h" value="Rte" />
+      <ref role="7MCEO" node="7Ouvy0D6F6c" resolve="Rte" />
+      <node concept="7MCFW" id="7Ouvy0Dmzmq" role="7L4j0">
+        <property role="TrG5h" value="Rte1_0" />
+        <ref role="7L4j4" node="7Ouvy0D6F6e" resolve="Rte1" />
+      </node>
+    </node>
+    <node concept="7MCFo" id="7Ouvy0Dkp2z" role="1SOKVa">
+      <property role="TrG5h" value="Rte" />
+      <ref role="7MCEO" node="7Ouvy0CGSRb" resolve="Rte" />
+      <node concept="7MCEg" id="7Ouvy0Dkp2B" role="7L4jf">
+        <property role="1utLuv" value="1" />
+        <property role="TrG5h" value="Test" />
+        <ref role="7L4j2" node="7Ouvy0CGSRd" resolve="Test" />
+      </node>
+      <node concept="7L4iL" id="7Ouvy0Dkp2C" role="7L4iO">
+        <ref role="7LONE" node="7Ouvy0CGSRf" resolve="Test2" />
+      </node>
+      <node concept="7MCFW" id="7Ouvy0Dkp2D" role="7L4j0">
+        <property role="TrG5h" value="Rte_3_0" />
+        <ref role="7L4j4" node="7Ouvy0CGSRt" resolve="Rte_3" />
+        <node concept="7MCEg" id="7Ouvy0Dkp2E" role="7L4jf">
+          <property role="1utLuv" value="3" />
+          <property role="TrG5h" value="Test8" />
+          <ref role="7L4j2" node="7Ouvy0CGSRB" resolve="Test8" />
+        </node>
+        <node concept="7L4iL" id="7Ouvy0Dkp2F" role="7L4iO">
+          <ref role="7LONE" node="7Ouvy0CGSR_" resolve="Test7" />
+        </node>
+      </node>
+      <node concept="7MCFW" id="7Ouvy0Dkp2G" role="7L4j0">
+        <property role="TrG5h" value="Test_0" />
+        <ref role="7L4j4" node="7Ouvy0DixD5" resolve="Test" />
+      </node>
+      <node concept="7MCFW" id="7Ouvy0Dkp2H" role="7L4j0">
+        <property role="TrG5h" value="Rte_1_0" />
+        <ref role="7L4j4" node="7Ouvy0CGSRh" resolve="Rte_1" />
+        <node concept="7MCEg" id="7Ouvy0Dkp2I" role="7L4jf">
+          <property role="1utLuv" value="2" />
+          <property role="TrG5h" value="Test3" />
+          <ref role="7L4j2" node="7Ouvy0CGSRj" resolve="Test3" />
+        </node>
+        <node concept="7L4iL" id="7Ouvy0Dkp2J" role="7L4iO">
+          <ref role="7LONE" node="7Ouvy0CGSRl" resolve="Test4" />
+        </node>
+        <node concept="7MCFW" id="7Ouvy0Dkp2K" role="7L4ja">
+          <property role="TrG5h" value="Rte_2_0" />
+          <ref role="7L4j4" node="7Ouvy0CGSRn" resolve="Rte_2" />
+          <node concept="7MCEg" id="7Ouvy0Dkp2L" role="7L4jf">
+            <property role="1utLuv" value="1" />
+            <property role="TrG5h" value="Test5" />
+            <ref role="7L4j2" node="7Ouvy0CGSRp" resolve="Test5" />
+          </node>
+          <node concept="7L4iL" id="7Ouvy0Dkp2M" role="7L4iO">
+            <ref role="7LONE" node="7Ouvy0CGSRr" resolve="Test6" />
+          </node>
+          <node concept="7MCFW" id="7Ouvy0Dkp2N" role="7L4ja">
+            <property role="TrG5h" value="Rte_4_0" />
+            <ref role="7L4j4" node="7Ouvy0CVh0O" resolve="Rte_4" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1SOKV9" id="7Ouvy0DoQd0">
+    <property role="3GE5qa" value="mz.another.pacakge" />
+    <node concept="7MCFo" id="7Ouvy0DA$z2" role="1SOKVa">
+      <property role="TrG5h" value="Rte3_0" />
+      <ref role="7MCEO" node="7Ouvy0D6F6c" resolve="Rte3" />
+      <node concept="7MCFW" id="7Ouvy0DA$z3" role="7L4j0">
+        <property role="TrG5h" value="Rte1_0" />
+        <ref role="7L4j4" node="7Ouvy0D6F6e" resolve="Rte1" />
       </node>
     </node>
   </node>
