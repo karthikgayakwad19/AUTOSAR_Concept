@@ -10,6 +10,7 @@
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="bnk3" ref="r:9805308e-34d7-4576-b7d2-a758b4bd38a3(de.slisson.mps.tables.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -50,6 +51,7 @@
     <property role="EcuMT" value="3760683462513073600" />
     <property role="TrG5h" value="ModuleDef" />
     <property role="34LRSv" value="ModDef" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
     <node concept="1TJgyj" id="3gKCqWBLLWl" role="1TKVEi">
       <property role="IQ2ns" value="3760683462513073941" />
@@ -60,6 +62,11 @@
     </node>
     <node concept="PrWs8" id="2j7NeO21dEv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5st34LErSZs" role="1TKVEi">
+      <property role="IQ2ns" value="6277186977967083484" />
+      <property role="20kJfa" value="import" />
+      <ref role="20lvS9" node="3gKCqWBLLR0" resolve="ModuleDef" />
     </node>
   </node>
   <node concept="1TIwiD" id="3gKCqWBLLUF">
@@ -141,20 +148,45 @@
   <node concept="1TIwiD" id="6n9ZUwt6J53">
     <property role="EcuMT" value="7334674565657456963" />
     <property role="TrG5h" value="DefinitionsEntry" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6n9ZUwt6J5v" role="1TKVEi">
       <property role="IQ2ns" value="7334674565657456991" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="modules" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3gKCqWBLLR0" resolve="ModuleDef" />
+    </node>
+    <node concept="PrWs8" id="5st34LEjESS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Ouvy0Dj2uZ">
     <property role="EcuMT" value="9015782180639221695" />
     <property role="TrG5h" value="ParameterDef" />
-    <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARDefs" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5st34LE733z" role="1TKVEi">
+      <property role="IQ2ns" value="6277186977961619683" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="5st34LE8HRX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="5st34LEcCNl" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5st34LE7dz6">
+    <property role="EcuMT" value="6277186977961662662" />
+    <property role="TrG5h" value="ParameterDefRef" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5st34LE7xUw" role="1TKVEi">
+      <property role="IQ2ns" value="6277186977961746080" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7Ouvy0Dj2uZ" resolve="ParameterDef" />
+    </node>
   </node>
 </model>
 

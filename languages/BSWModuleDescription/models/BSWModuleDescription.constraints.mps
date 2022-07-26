@@ -40,9 +40,6 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
-        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
-      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -518,9 +515,8 @@
             </node>
           </node>
           <node concept="3cpWs6" id="5D3OXK4_0As" role="3cqZAp">
-            <node concept="2ShNRf" id="5D3OXK4_0HY" role="3cqZAk">
-              <node concept="1pGfFk" id="5D3OXK4_1iF" role="2ShVmc">
-                <property role="373rjd" value="true" />
+            <node concept="2ShNRf" id="5st34LEbJNU" role="3cqZAk">
+              <node concept="1pGfFk" id="5st34LEbK1h" role="2ShVmc">
                 <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
               </node>
             </node>

@@ -149,6 +149,31 @@
             <property role="Xl_RC" value="Test" />
           </node>
         </node>
+        <node concept="3clFbF" id="5st34LEap5T" role="3cqZAp">
+          <node concept="2YIFZM" id="5st34LEap5V" role="3clFbG">
+            <ref role="1Pybhc" to="6j1s:5D3OXK4etNc" resolve="ContentsGeneration" />
+            <ref role="37wK5l" to="6j1s:7Ouvy0CFSXP" resolve="createModuleContents" />
+            <node concept="2OqwBi" id="5st34LEap5W" role="37wK5m">
+              <node concept="1PxgMI" id="5st34LEap5X" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="5st34LEap5Y" role="3oSUPX">
+                  <ref role="cht4Q" to="unt2:_tXkoe_RYu" resolve="ModuleValue" />
+                </node>
+                <node concept="2Sf5sV" id="5st34LEap5Z" role="1m5AlR" />
+              </node>
+              <node concept="3TrEf2" id="5st34LEap60" role="2OqNvi">
+                <ref role="3Tt5mk" to="unt2:_tXkoe_RZM" resolve="definition" />
+              </node>
+            </node>
+            <node concept="1PxgMI" id="5st34LEap61" role="37wK5m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="5st34LEap62" role="3oSUPX">
+                <ref role="cht4Q" to="unt2:_tXkoe_RYu" resolve="ModuleValue" />
+              </node>
+              <node concept="2Sf5sV" id="5st34LEap63" role="1m5AlR" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="5D3OXK4iC$8" role="3cqZAp" />
         <node concept="3clFbH" id="5D3OXK4iC$p" role="3cqZAp" />
       </node>

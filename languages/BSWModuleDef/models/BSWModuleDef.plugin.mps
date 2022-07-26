@@ -93,7 +93,7 @@
           <node concept="2OqwBi" id="6Bmu5uOUOCJ" role="3clFbG">
             <node concept="1beSmn" id="6Bmu5uOUOjJ" role="2Oq$k0" />
             <node concept="3Tsc0h" id="6Bmu5uPBWn$" role="2OqNvi">
-              <ref role="3TtcxE" to="o4r4:6n9ZUwt6J5v" resolve="modules" />
+              <ref role="3TtcxE" to="o4r4:6n9ZUwt6J5v" resolve="module" />
             </node>
           </node>
         </node>
