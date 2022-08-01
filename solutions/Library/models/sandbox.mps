@@ -27,6 +27,7 @@
     </language>
     <language id="e3030623-38bb-48cb-ae7e-f3be4cd83f0e" name="BSWModuleDef">
       <concept id="3760683462513073600" name="BSWModuleDef.structure.ModuleDef" flags="ng" index="jXVLJ">
+        <reference id="6277186977967083484" name="import" index="XsCeg" />
         <child id="3760683462513073941" name="contents" index="jXVUU" />
       </concept>
       <concept id="3760683462513073835" name="BSWModuleDef.structure.ContainerDef" flags="ng" index="jXVW4">
@@ -130,6 +131,7 @@
     <property role="3GE5qa" value="package1b" />
     <property role="TrG5h" value="Rte" />
     <property role="OYnhT" value="Configuration of the Rte (Runtime Environment) module." />
+    <ref role="XsCeg" node="4wlY9rn49JL" resolve="Os" />
     <node concept="jXVW4" id="4wlY9rmUmr$" role="jXVUU">
       <property role="TrG5h" value="RteBswGeneral" />
       <property role="2uLLrX" value="fLJekj4/_1" />
@@ -188,6 +190,18 @@
           <node concept="5mgYR" id="4wlY9rn0enu" role="5mgYi">
             <property role="TrG5h" value="UNCONDITIONAL" />
           </node>
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn4a8r" role="jXVSH">
+          <property role="TrG5h" value="RteBswMappedToTaskRef" />
+          <ref role="7Lzr$" node="4wlY9rn4a3s" resolve="OsTask" />
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn4a8X" role="jXVSH">
+          <property role="TrG5h" value="RteBswUsedOsAlarmRef" />
+          <ref role="7Lzr$" node="4wlY9rn49JO" resolve="OsAlarm" />
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn4a9x" role="jXVSH">
+          <property role="TrG5h" value="RteBswUsedOsEventRef" />
+          <ref role="7Lzr$" node="4wlY9rn4a2q" resolve="OsEvent" />
         </node>
       </node>
       <node concept="jXVW4" id="4wlY9rn0en_" role="jXVSH">
@@ -427,6 +441,7 @@
         <property role="TrG5h" value="RteVfbTraceEnabled" />
         <node concept="2vmvy5" id="4wlY9rn1mTT" role="2zM23F" />
       </node>
+      <node concept="2uLZmn" id="4wlY9rn49Ja" role="jXVSH" />
       <node concept="jXVW4" id="4wlY9rn1mU$" role="jXVSH">
         <property role="TrG5h" value="RteVfbTraceClient" />
         <property role="2uLLrX" value="fLJekj5/_0__n" />
@@ -440,31 +455,231 @@
     <node concept="jXVW4" id="4wlY9rn1mWF" role="jXVUU">
       <property role="TrG5h" value="RteSwComponentInstance" />
       <property role="2uLLrX" value="fLJekj5/_0__n" />
-      <node concept="1kk_Av" id="4wlY9rn1mYs" role="jXVSH">
-        <property role="TrG5h" value="RteImmediateRestart" />
-        <node concept="2vmvy5" id="4wlY9rn1mYB" role="2zM23F" />
-      </node>
-      <node concept="2uYKvh" id="4wlY9rn1mYN" role="jXVSH">
-        <property role="TrG5h" value="RteOsSchedulePoint" />
-        <node concept="5mgYR" id="4wlY9rn1mYV" role="5mgYi">
-          <property role="TrG5h" value="CONDITIONAL" />
+      <node concept="jXVW4" id="4wlY9rn4a9P" role="jXVSH">
+        <property role="TrG5h" value="RteEventToTaskMapping" />
+        <property role="2uLLrX" value="fLJekj5/_0__n" />
+        <node concept="1kk_Av" id="4wlY9rn1mYs" role="jXVSH">
+          <property role="TrG5h" value="RteImmediateRestart" />
+          <node concept="2vmvy5" id="4wlY9rn1mYB" role="2zM23F" />
         </node>
-        <node concept="5mgYR" id="4wlY9rn1mZ0" role="5mgYi">
-          <property role="TrG5h" value="NONE" />
+        <node concept="2uYKvh" id="4wlY9rn1mYN" role="jXVSH">
+          <property role="TrG5h" value="RteOsSchedulePoint" />
+          <node concept="5mgYR" id="4wlY9rn1mYV" role="5mgYi">
+            <property role="TrG5h" value="CONDITIONAL" />
+          </node>
+          <node concept="5mgYR" id="4wlY9rn1mZ0" role="5mgYi">
+            <property role="TrG5h" value="NONE" />
+          </node>
+          <node concept="5mgYR" id="4wlY9rn1mZ6" role="5mgYi">
+            <property role="TrG5h" value="UNCONDITIONAL" />
+          </node>
         </node>
-        <node concept="5mgYR" id="4wlY9rn1mZ6" role="5mgYi">
-          <property role="TrG5h" value="UNCONDITIONAL" />
+        <node concept="1kk_Av" id="4wlY9rn1mZl" role="jXVSH">
+          <property role="TrG5h" value="RtePositionInTask" />
+          <node concept="30bXR$" id="4wlY9rn1mZB" role="2zM23F" />
+        </node>
+        <node concept="1kk_Av" id="4wlY9rn1mZT" role="jXVSH">
+          <property role="TrG5h" value="RteServerQueueLength" />
+          <node concept="30bXR$" id="4wlY9rn1n0d" role="2zM23F" />
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn4aav" role="jXVSH">
+          <property role="TrG5h" value="RteMappedToTaskRef" />
+          <ref role="7Lzr$" node="4wlY9rn4a3s" resolve="OsTask" />
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn4aaT" role="jXVSH">
+          <property role="TrG5h" value="RteUsedOsAlarmRef" />
+          <ref role="7Lzr$" node="4wlY9rn49JO" resolve="OsAlarm" />
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn4abl" role="jXVSH">
+          <property role="TrG5h" value="RteUsedOsEventRef" />
+          <ref role="7Lzr$" node="4wlY9rn4a2q" resolve="OsEvent" />
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn4abN" role="jXVSH">
+          <property role="TrG5h" value="RteVirtuallyMappedToTaskRef" />
+          <ref role="7Lzr$" node="4wlY9rn4a3s" resolve="OsTask" />
         </node>
       </node>
-      <node concept="1kk_Av" id="4wlY9rn1mZl" role="jXVSH">
-        <property role="TrG5h" value="RtePositionInTask" />
-        <node concept="30bXR$" id="4wlY9rn1mZB" role="2zM23F" />
+    </node>
+  </node>
+  <node concept="jXVLJ" id="4wlY9rn49JL">
+    <property role="3GE5qa" value="package1b" />
+    <property role="TrG5h" value="Os" />
+    <property role="OYnhT" value="Configuration of the Os (Operating System) module." />
+    <node concept="jXVW4" id="4wlY9rn49JO" role="jXVUU">
+      <property role="TrG5h" value="OsAlarm" />
+      <property role="2uLLrX" value="fLJekj5/_0__n" />
+      <node concept="jXVW4" id="4wlY9rn49JR" role="jXVSH">
+        <property role="TrG5h" value="OsAlarmAutostart" />
+        <node concept="1kk_Av" id="4wlY9rn49JT" role="jXVSH">
+          <property role="TrG5h" value="OsAlarmAlarmTime" />
+          <node concept="30bXR$" id="4wlY9rn49K4" role="2zM23F" />
+        </node>
+        <node concept="2uYKvh" id="4wlY9rn49Kg" role="jXVSH">
+          <property role="TrG5h" value="OsAlarmAutostartType" />
+          <node concept="5mgYR" id="4wlY9rn49Kr" role="5mgYi">
+            <property role="TrG5h" value="ABSOLUTE" />
+          </node>
+          <node concept="5mgYR" id="4wlY9rn49Kw" role="5mgYi">
+            <property role="TrG5h" value="RELATIVE" />
+          </node>
+        </node>
+        <node concept="1kk_Av" id="4wlY9rn49KH" role="jXVSH">
+          <property role="TrG5h" value="OsAlarmCycleTime" />
+          <node concept="30bXR$" id="4wlY9rn49KY" role="2zM23F" />
+        </node>
+        <node concept="jXZ$6" id="4wlY9rn49LX" role="jXVSH">
+          <property role="TrG5h" value="OsAlarmAppModeRef" />
+          <ref role="7Lzr$" node="4wlY9rn49LB" resolve="OsAppMode" />
+        </node>
+        <node concept="2uLZmn" id="4wlY9rn49L6" role="jXVSH" />
       </node>
-      <node concept="1kk_Av" id="4wlY9rn1mZT" role="jXVSH">
-        <property role="TrG5h" value="RteServerQueueLength" />
-        <node concept="30bXR$" id="4wlY9rn1n0d" role="2zM23F" />
+    </node>
+    <node concept="jXVW4" id="4wlY9rn49LB" role="jXVUU">
+      <property role="TrG5h" value="OsAppMode" />
+      <property role="2uLLrX" value="fLJekj4/_1" />
+    </node>
+    <node concept="jXVW4" id="4wlY9rn49M8" role="jXVUU">
+      <property role="TrG5h" value="OsApplication" />
+      <property role="2uLLrX" value="fLJekj5/_0__n" />
+      <node concept="1kk_Av" id="4wlY9rn49Mm" role="jXVSH">
+        <property role="TrG5h" value="OsTrusted" />
+        <node concept="2vmvy5" id="4wlY9rn49MN" role="2zM23F" />
       </node>
-      <node concept="2uLZmn" id="4wlY9rn1n0l" role="jXVSH" />
+      <node concept="1kk_Av" id="4wlY9rn49MZ" role="jXVSH">
+        <property role="TrG5h" value="OsTrustedApplicationDelayTimingViolationCall" />
+        <node concept="2vmvy5" id="4wlY9rn49Nd" role="2zM23F" />
+      </node>
+      <node concept="1kk_Av" id="4wlY9rn49Nr" role="jXVSH">
+        <property role="TrG5h" value="OsTrustedApplicationWithProtection" />
+        <node concept="2vmvy5" id="4wlY9rn49NF" role="2zM23F" />
+      </node>
+      <node concept="jXZ$6" id="4wlY9rn49NV" role="jXVSH">
+        <property role="TrG5h" value="OsAppAlarmRef" />
+        <ref role="7Lzr$" node="4wlY9rn49JO" resolve="OsAlarm" />
+      </node>
+      <node concept="jXZ$6" id="4wlY9rn4a28" role="jXVSH">
+        <property role="TrG5h" value="OsAppCounterRef" />
+        <ref role="7Lzr$" node="4wlY9rn49Qu" resolve="OsCounter" />
+      </node>
+      <node concept="jXVW4" id="4wlY9rn49Ot" role="jXVSH">
+        <property role="TrG5h" value="OsApplicationHooks" />
+        <property role="2uLLrX" value="fLJekj4/_1" />
+        <node concept="1kk_Av" id="4wlY9rn49OB" role="jXVSH">
+          <property role="TrG5h" value="OsAppErrorHook" />
+          <node concept="2vmvy5" id="4wlY9rn49ON" role="2zM23F" />
+        </node>
+        <node concept="1kk_Av" id="4wlY9rn49OZ" role="jXVSH">
+          <property role="TrG5h" value="OsAppShutdownHook" />
+          <node concept="2vmvy5" id="4wlY9rn49Pd" role="2zM23F" />
+        </node>
+        <node concept="1kk_Av" id="4wlY9rn49PB" role="jXVSH">
+          <property role="TrG5h" value="OsAppStartupHook" />
+          <node concept="2vmvy5" id="4wlY9rn49PS" role="2zM23F" />
+        </node>
+      </node>
+      <node concept="jXVW4" id="4wlY9rn49Qe" role="jXVSH">
+        <property role="TrG5h" value="OsApplicationTrustedFunction" />
+        <property role="2uLLrX" value="fLJekj5/_0__n" />
+      </node>
+    </node>
+    <node concept="jXVW4" id="4wlY9rn49Qu" role="jXVUU">
+      <property role="TrG5h" value="OsCounter" />
+      <property role="2uLLrX" value="fLJekj5/_0__n" />
+      <node concept="1kk_Av" id="4wlY9rn49QY" role="jXVSH">
+        <property role="TrG5h" value="OsCounterMaxAllowedValue" />
+        <node concept="30bXR$" id="4wlY9rn49YW" role="2zM23F" />
+      </node>
+      <node concept="1kk_Av" id="4wlY9rn49Z9" role="jXVSH">
+        <property role="TrG5h" value="OsCounterMinCycle" />
+        <node concept="30bXR$" id="4wlY9rn49Zo" role="2zM23F" />
+      </node>
+      <node concept="1kk_Av" id="4wlY9rn49ZB" role="jXVSH">
+        <property role="TrG5h" value="OsCounterTicksPerBase" />
+        <node concept="30bXR$" id="4wlY9rn49ZT" role="2zM23F" />
+      </node>
+      <node concept="2uYKvh" id="4wlY9rn4a0a" role="jXVSH">
+        <property role="TrG5h" value="OsCounterType" />
+        <node concept="5mgYR" id="4wlY9rn4a0n" role="5mgYi">
+          <property role="TrG5h" value="HARDWARE" />
+        </node>
+        <node concept="5mgYR" id="4wlY9rn4a0s" role="5mgYi">
+          <property role="TrG5h" value="SOFTWARE" />
+        </node>
+      </node>
+      <node concept="jXZ$6" id="4wlY9rn4a0I" role="jXVSH">
+        <property role="TrG5h" value="OsCounterAccessingApplication" />
+        <ref role="7Lzr$" node="4wlY9rn49M8" resolve="OsApplication" />
+      </node>
+      <node concept="2uLZmn" id="4wlY9rn4a0V" role="jXVSH" />
+      <node concept="jXVW4" id="4wlY9rn4a1m" role="jXVSH">
+        <property role="TrG5h" value="OsDriver" />
+        <node concept="2uLZmn" id="4wlY9rn4a1_" role="jXVSH" />
+      </node>
+      <node concept="2uLZmn" id="4wlY9rn49YS" role="jXVSH" />
+      <node concept="jXVW4" id="4wlY9rn4a1B" role="jXVSH">
+        <property role="TrG5h" value="OsTimeConstant" />
+        <property role="2uLLrX" value="fLJekj5/_0__n" />
+      </node>
+    </node>
+    <node concept="jXVW4" id="4wlY9rn4a2q" role="jXVUU">
+      <property role="TrG5h" value="OsEvent" />
+      <property role="2uLLrX" value="fLJekj5/_0__n" />
+      <node concept="1kk_Av" id="4wlY9rn4a39" role="jXVSH">
+        <property role="TrG5h" value="OsEventMask" />
+        <node concept="30bXR$" id="4wlY9rn4a3k" role="2zM23F" />
+      </node>
+    </node>
+    <node concept="jXVW4" id="4wlY9rn4a3s" role="jXVUU">
+      <property role="TrG5h" value="OsTask" />
+      <property role="2uLLrX" value="fLJekj5/_0__n" />
+      <node concept="1kk_Av" id="4wlY9rn4a4e" role="jXVSH">
+        <property role="TrG5h" value="OsTaskActivation" />
+        <node concept="30bXR$" id="4wlY9rn4a4p" role="2zM23F" />
+      </node>
+      <node concept="1kk_Av" id="4wlY9rn4a4_" role="jXVSH">
+        <property role="TrG5h" value="OsTaskPriority" />
+        <node concept="30bXR$" id="4wlY9rn4a4N" role="2zM23F" />
+      </node>
+      <node concept="2uYKvh" id="4wlY9rn4a51" role="jXVSH">
+        <property role="TrG5h" value="OsTaskSchedule" />
+        <node concept="5mgYR" id="4wlY9rn4a5b" role="5mgYi">
+          <property role="TrG5h" value="FULL" />
+        </node>
+        <node concept="5mgYR" id="4wlY9rn4a5g" role="5mgYi">
+          <property role="TrG5h" value="NON" />
+        </node>
+      </node>
+      <node concept="jXZ$6" id="4wlY9rn4a5v" role="jXVSH">
+        <property role="TrG5h" value="OsTaskAccessingApplication" />
+        <ref role="7Lzr$" node="4wlY9rn49M8" resolve="OsApplication" />
+      </node>
+      <node concept="jXZ$6" id="4wlY9rn4a5N" role="jXVSH">
+        <property role="TrG5h" value="OsTaskEventRef" />
+        <ref role="7Lzr$" node="4wlY9rn4a2q" resolve="OsEvent" />
+      </node>
+      <node concept="2uLZmn" id="4wlY9rn4a6i" role="jXVSH" />
+      <node concept="jXVW4" id="4wlY9rn4a6D" role="jXVSH">
+        <property role="TrG5h" value="OsTaskAutostart" />
+        <node concept="jXZ$6" id="4wlY9rn4a6Q" role="jXVSH">
+          <property role="TrG5h" value="OsTaskAppModeRef" />
+          <ref role="7Lzr$" node="4wlY9rn49LB" resolve="OsAppMode" />
+        </node>
+      </node>
+      <node concept="jXVW4" id="4wlY9rn4a6S" role="jXVSH">
+        <property role="TrG5h" value="OsTaskTimingProtection" />
+        <node concept="jXVW4" id="4wlY9rn4a76" role="jXVSH">
+          <property role="TrG5h" value="OsTaskResourceLock" />
+          <property role="2uLLrX" value="fLJekj5/_0__n" />
+          <node concept="jXZ$6" id="4wlY9rn4a89" role="jXVSH">
+            <property role="TrG5h" value="OsTaskResourceLockResourceRef" />
+            <ref role="7Lzr$" node="4wlY9rn4a78" resolve="OsResource" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="jXVW4" id="4wlY9rn4a78" role="jXVUU">
+      <property role="TrG5h" value="OsResource" />
+      <property role="2uLLrX" value="fLJekj5/_0__n" />
     </node>
   </node>
 </model>
