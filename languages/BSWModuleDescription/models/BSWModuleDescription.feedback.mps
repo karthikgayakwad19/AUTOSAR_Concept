@@ -75,7 +75,7 @@
         </node>
       </node>
       <node concept="216oCf" id="5D3OXK4_maH" role="3JXyrO">
-        <ref role="sa$J1" to="bea4:1mFJTG7e$j" />
+        <ref role="sa$J1" to="bea4:1mFJTG7e$j" resolve="RefOutOfScope" />
         <ref role="216p6q" to="unt2:_tXkoeAr62" resolve="definition" />
       </node>
     </node>

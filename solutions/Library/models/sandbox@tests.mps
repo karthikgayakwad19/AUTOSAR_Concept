@@ -15,6 +15,7 @@
     <import index="g7xy" ref="r:eb7aaa01-95f0-4f5f-8b16-696022503608(BSWModuleDescription.typesystem)" />
     <import index="3axt" ref="r:697c4459-2328-427e-b4ca-e36dbc8b8b6b(BSWModuleDescription.intentions)" />
     <import index="sdz2" ref="r:f027d903-6caf-4eb6-bfe5-97f1b7e3c3fa(BSWModuleDescription.constraints)" />
+    <import index="ywdt" ref="r:e45bc6fb-2ba8-4f7a-bc4a-9178de8d0488(BSWModuleDef.constraints)" />
     <import index="unt2" ref="r:327da334-76e6-4692-920d-0f681c8933c8(BSWModuleDescription.structure)" implicit="true" />
     <import index="o4r4" ref="r:1dfccbdf-a5e4-4798-9d92-ff10e8880347(BSWModuleDef.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -170,13 +171,18 @@
     </language>
     <language id="e3030623-38bb-48cb-ae7e-f3be4cd83f0e" name="BSWModuleDef">
       <concept id="3760683462513073600" name="BSWModuleDef.structure.ModuleDef" flags="ng" index="jXVLJ">
-        <child id="3760683462513073941" name="containers" index="jXVUU" />
+        <child id="3760683462513073941" name="contents" index="jXVUU" />
       </concept>
-      <concept id="3760683462513073835" name="BSWModuleDef.structure.ContainerDef" flags="ng" index="jXVW4" />
-      <concept id="3760683462513088681" name="BSWModuleDef.structure.ComplexRefereneceDef" flags="ng" index="jXZ$6">
+      <concept id="3760683462513073835" name="BSWModuleDef.structure.ContainerDef" flags="ng" index="jXVW4">
+        <child id="3760683462513074050" name="contents" index="jXVSH" />
+      </concept>
+      <concept id="3760683462513088681" name="BSWModuleDef.structure.ContainerRefereneceDef" flags="ng" index="jXZ$6">
         <reference id="674965200417047458" name="destination" index="7Lzr$" />
       </concept>
-      <concept id="9015782180639221695" name="BSWModuleDef.structure.ParameterDef" flags="ng" index="1kk_Av">
+      <concept id="6277186977961662662" name="BSWModuleDef.structure.ParameterDefRef" flags="ng" index="X0tia">
+        <reference id="6277186977961746080" name="parameters" index="X0LbG" />
+      </concept>
+      <concept id="9015782180639221695" name="BSWModuleDef.structure.AlphaNumericParameterDef" flags="ng" index="1kk_Av">
         <child id="6277186977961619683" name="value" index="X0jMJ" />
       </concept>
       <concept id="7334674565656690063" name="BSWModuleDef.structure.AUTOSARDefs" flags="ng" index="1SLG8B">
@@ -185,7 +191,7 @@
         <child id="2650312224042792467" name="parameters" index="_dvFY" />
       </concept>
       <concept id="7334674565657456963" name="BSWModuleDef.structure.DefinitionsEntry" flags="ng" index="1SOKVF">
-        <child id="7334674565657456991" name="modules" index="1SOKVR" />
+        <child id="7334674565657456991" name="module" index="1SOKVR" />
       </concept>
     </language>
     <language id="ef22f920-a15b-4c66-a06e-e0c4aea10605" name="BSWModuleDescription">
@@ -785,6 +791,48 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5st34LECkbO">
+    <property role="TrG5h" value="TestParameterScope" />
+    <node concept="1qefOq" id="5st34LECkeJ" role="1SKRRt">
+      <node concept="jXVLJ" id="5st34LECkeI" role="1qenE9">
+        <property role="TrG5h" value="Com" />
+        <node concept="jXVW4" id="5st34LECkp8" role="jXVUU">
+          <property role="TrG5h" value="Container1" />
+          <node concept="jXVW4" id="5st34LECtmD" role="jXVSH">
+            <property role="TrG5h" value="Subcontainer1" />
+            <node concept="1kk_Av" id="5st34LECtoD" role="_dvFY">
+              <property role="TrG5h" value="param22" />
+              <node concept="30bXR$" id="5st34LECtqr" role="2zM23F" />
+            </node>
+          </node>
+          <node concept="1kk_Av" id="5st34LECkr$" role="_dvFY">
+            <property role="TrG5h" value="param2" />
+            <node concept="30bXR$" id="5st34LECkt7" role="2zM23F" />
+          </node>
+          <node concept="jXVW4" id="5st34LED1LW" role="jXVSH">
+            <property role="TrG5h" value="Subcontainer2" />
+            <node concept="1kk_Av" id="5st34LED1NL" role="_dvFY">
+              <property role="TrG5h" value="param33" />
+              <node concept="X0tia" id="5st34LED1vR" role="X0jMJ">
+                <ref role="X0LbG" node="5st34LECtoD" resolve="param22" />
+                <node concept="7CXmI" id="5st34LED8BC" role="lGtFl">
+                  <node concept="39XrGg" id="5st34LED8Ch" role="7EUXB">
+                    <node concept="2u4KIi" id="5st34LED8Ci" role="39rjcI">
+                      <ref role="39XzEq" to="ywdt:5st34LE946A" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1kk_Av" id="5st34LECYJn" role="_dvFY">
+          <property role="TrG5h" value="param1" />
+          <node concept="30bXR$" id="5st34LECYKu" role="2zM23F" />
         </node>
       </node>
     </node>

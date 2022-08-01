@@ -433,7 +433,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="5D3OXK4pgi$" role="2OqNvi">
-                <ref role="3TtcxE" to="o4r4:3gKCqWBLLWl" resolve="containers" />
+                <ref role="3TtcxE" to="o4r4:3gKCqWBLLWl" resolve="contents" />
               </node>
             </node>
             <node concept="34oBXx" id="5D3OXK4pgi_" role="2OqNvi" />
@@ -663,7 +663,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="5D3OXK4pmyx" role="2OqNvi">
-                <ref role="3TtcxE" to="o4r4:3gKCqWBLLY2" resolve="subContainers" />
+                <ref role="3TtcxE" to="o4r4:3gKCqWBLLY2" resolve="contents" />
               </node>
             </node>
             <node concept="34oBXx" id="5D3OXK4pi9o" role="2OqNvi" />
@@ -858,7 +858,7 @@
                       </node>
                       <node concept="2OqwBi" id="5D3OXK4sZx4" role="37vLTJ">
                         <node concept="37vLTw" id="5D3OXK4sZx5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5D3OXK4sZwU" resolve="referencesNode" />
+                          <ref role="3cqZAo" node="5D3OXK4sZwU" resolve="parameterValue" />
                         </node>
                         <node concept="3TrcHB" id="5D3OXK4sZx6" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -873,7 +873,7 @@
                       </node>
                       <node concept="2OqwBi" id="5D3OXK4sZxa" role="37vLTJ">
                         <node concept="37vLTw" id="5D3OXK4sZxb" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5D3OXK4sZwU" resolve="referencesNode" />
+                          <ref role="3cqZAo" node="5D3OXK4sZwU" resolve="parameterValue" />
                         </node>
                         <node concept="3TrEf2" id="5D3OXK4sZxc" role="2OqNvi">
                           <ref role="3Tt5mk" to="unt2:_tXkoeAr64" resolve="definition" />
@@ -929,7 +929,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="5D3OXK4x51V" role="2OqNvi">
-                <ref role="3TtcxE" to="o4r4:3gKCqWBLLY2" resolve="subContainers" />
+                <ref role="3TtcxE" to="o4r4:3gKCqWBLLY2" resolve="contents" />
               </node>
             </node>
             <node concept="2es0OD" id="5D3OXK4xaQh" role="2OqNvi">
