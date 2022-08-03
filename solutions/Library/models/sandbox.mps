@@ -160,7 +160,7 @@
         <property role="2uLLrX" value="fLJekj5/_0__n" />
         <node concept="1kk_Av" id="4wlY9rmVJPW" role="jXVSH">
           <property role="TrG5h" value="RteBswActivationOffset" />
-          <node concept="30bXR$" id="4wlY9rmVJQ7" role="2zM23F" />
+          <node concept="30bXR$" id="4wlY9rncttk" role="2zM23F" />
         </node>
         <node concept="1kk_Av" id="4wlY9rmVJQj" role="jXVSH">
           <property role="TrG5h" value="RteBswEventPeriod" />
@@ -203,6 +203,7 @@
           <property role="TrG5h" value="RteBswUsedOsEventRef" />
           <ref role="7Lzr$" node="4wlY9rn4a2q" resolve="OsEvent" />
         </node>
+        <node concept="2uLZmn" id="4wlY9rnfIhq" role="jXVSH" />
       </node>
       <node concept="jXVW4" id="4wlY9rn0en_" role="jXVSH">
         <property role="TrG5h" value="RteBswExclusiveAreaImpl" />
@@ -298,6 +299,7 @@
         </node>
         <node concept="jXVW4" id="4wlY9rn1lTe" role="jXVSH">
           <property role="TrG5h" value="ComUserCallback" />
+          <property role="OYnhT" value="This container defines a Com callback function for signals and signal groups." />
           <node concept="2uYKvh" id="4wlY9rn1lTj" role="jXVSH">
             <property role="TrG5h" value="ComUserCallbackType" />
             <node concept="5mgYR" id="4wlY9rn1lTr" role="5mgYi">
@@ -330,6 +332,8 @@
             <property role="TrG5h" value="ComUserCallbackRef" />
             <ref role="7Lzr$" node="4wlY9rn1lTe" resolve="ComUserCallback" />
           </node>
+          <node concept="2uLZmn" id="4wlY9rneN3p" role="jXVSH" />
+          <node concept="2uLZmn" id="4wlY9rneN3a" role="jXVSH" />
         </node>
         <node concept="jXVW4" id="4wlY9rn1lUE" role="jXVSH">
           <property role="TrG5h" value="ComUserSignalGroup" />
@@ -441,6 +445,8 @@
         <property role="TrG5h" value="RteVfbTraceEnabled" />
         <node concept="2vmvy5" id="4wlY9rn1mTT" role="2zM23F" />
       </node>
+      <node concept="2uLZmn" id="4wlY9rnejnO" role="jXVSH" />
+      <node concept="2uLZmn" id="4wlY9rndQk1" role="jXVSH" />
       <node concept="2uLZmn" id="4wlY9rn49Ja" role="jXVSH" />
       <node concept="jXVW4" id="4wlY9rn1mU$" role="jXVSH">
         <property role="TrG5h" value="RteVfbTraceClient" />
