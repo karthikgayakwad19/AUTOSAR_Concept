@@ -14,6 +14,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -51,6 +52,7 @@
   <node concept="1TIwiD" id="_tXkoe_RYu">
     <property role="EcuMT" value="674965200416767902" />
     <property role="TrG5h" value="ModuleValue" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARVals" />
     <node concept="1TJgyj" id="_tXkoe_RZM" role="1TKVEi">
       <property role="IQ2ns" value="674965200416767986" />
@@ -100,13 +102,13 @@
     <node concept="1TJgyj" id="6Bmu5uPiU3L" role="1TKVEi">
       <property role="IQ2ns" value="7626415337097634033" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="variantionPoint" />
+      <property role="20kJfa" value="value" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="_tXkoeAr7R">
     <property role="EcuMT" value="674965200416911863" />
-    <property role="TrG5h" value="ComplexReferenceValue" />
+    <property role="TrG5h" value="ContainerReferenceValue" />
     <ref role="1TJDcQ" node="6n9ZUwt3NQf" resolve="AUTOSARVals" />
     <node concept="1TJgyj" id="_tXkoeAFAE" role="1TKVEi">
       <property role="IQ2ns" value="674965200416979370" />
@@ -123,7 +125,6 @@
   <node concept="1TIwiD" id="6n9ZUwt6J5x">
     <property role="EcuMT" value="7334674565657456993" />
     <property role="TrG5h" value="ValuesEntry" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6n9ZUwt6J5y" role="1TKVEi">
       <property role="IQ2ns" value="7334674565657456994" />
@@ -149,7 +150,14 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="referenceValues" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="_tXkoeAr7R" resolve="ComplexReferenceValue" />
+      <ref role="20lvS9" node="_tXkoeAr7R" resolve="ContainerReferenceValue" />
+    </node>
+    <node concept="1TJgyj" id="4wlY9rnFkzP" role="1TKVEi">
+      <property role="IQ2ns" value="5194331071988975861" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="enumValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4wlY9rnCcmD" resolve="EnumParamValue" />
     </node>
     <node concept="1TJgyi" id="5xnYmMgdeaa" role="1TKVEl">
       <property role="IQ2nx" value="6365830842982654602" />
@@ -175,6 +183,22 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="comment" />
       <ref role="20lvS9" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4wlY9rnCcmD">
+    <property role="EcuMT" value="5194331071988155817" />
+    <property role="TrG5h" value="EnumParamValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4wlY9rnCcmF" role="1TKVEi">
+      <property role="IQ2ns" value="5194331071988155819" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="o4r4:4wlY9rmVJX7" resolve="EnumerationParameterDef" />
+    </node>
+    <node concept="1TJgyj" id="4wlY9rnCco6" role="1TKVEi">
+      <property role="IQ2ns" value="5194331071988155910" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
   </node>
 </model>

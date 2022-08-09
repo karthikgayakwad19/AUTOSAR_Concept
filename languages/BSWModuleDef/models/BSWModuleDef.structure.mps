@@ -25,6 +25,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -82,6 +83,7 @@
   <node concept="1TIwiD" id="3gKCqWBLLUF">
     <property role="EcuMT" value="3760683462513073835" />
     <property role="TrG5h" value="ContainerDef" />
+    <property role="34LRSv" value="container" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3gKCqWBLLY2" role="1TKVEi">
       <property role="IQ2ns" value="3760683462513074050" />
@@ -141,6 +143,7 @@
   <node concept="1TIwiD" id="7Ouvy0Dj2uZ">
     <property role="EcuMT" value="9015782180639221695" />
     <property role="TrG5h" value="AlphaNumericParameterDef" />
+    <property role="34LRSv" value="param" />
     <ref role="1TJDcQ" node="4wlY9rmN7pk" resolve="AbstractParameterDef" />
     <node concept="1TJgyj" id="5st34LE733z" role="1TKVEi">
       <property role="IQ2ns" value="6277186977961619683" />
@@ -161,7 +164,7 @@
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="5st34LE7xUw" role="1TKVEi">
       <property role="IQ2ns" value="6277186977961746080" />
-      <property role="20kJfa" value="parameters" />
+      <property role="20kJfa" value="parameter" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7Ouvy0Dj2uZ" resolve="AlphaNumericParameterDef" />
     </node>

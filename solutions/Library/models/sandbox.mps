@@ -12,12 +12,26 @@
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
+      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
+      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
+        <child id="5115872837156576280" name="right" index="30dEs_" />
+        <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="1330041117646892924" name="org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec" flags="ng" index="2gteS_">
+        <property id="1330041117646892934" name="prec" index="2gteVv" />
+      </concept>
+      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
+        <child id="1330041117646892937" name="prec" index="2gteVg" />
+      </concept>
       <concept id="7425695345928358774" name="org.iets3.core.expr.simpleTypes.structure.FalseLiteral" flags="ng" index="2vmpn$" />
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
       <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="7061117989422575313" name="org.iets3.core.expr.toplevel.structure.EnumLiteral" flags="ng" index="5mgYR" />
@@ -41,12 +55,15 @@
         <property id="5194331071974665835" name="multiplicity" index="2uLLrX" />
       </concept>
       <concept id="5194331071976505159" name="BSWModuleDef.structure.EnumerationParameterDef" flags="ng" index="2uYKvh" />
+      <concept id="6277186977961662662" name="BSWModuleDef.structure.ParameterDefRef" flags="ng" index="X0tia">
+        <reference id="6277186977961746080" name="parameter" index="X0LbG" />
+      </concept>
       <concept id="9015782180639221695" name="BSWModuleDef.structure.AlphaNumericParameterDef" flags="ng" index="1kk_Av">
         <child id="6277186977961619683" name="value" index="X0jMJ" />
       </concept>
     </language>
     <language id="ef22f920-a15b-4c66-a06e-e0c4aea10605" name="BSWModuleDescription">
-      <concept id="674965200416911863" name="BSWModuleDescription.structure.ComplexReferenceValue" flags="ng" index="7L4iL">
+      <concept id="674965200416911863" name="BSWModuleDescription.structure.ContainerReferenceValue" flags="ng" index="7L4iL">
         <reference id="674965200416979372" name="definition" index="7LONE" />
       </concept>
       <concept id="674965200416767958" name="BSWModuleDescription.structure.ParameterValue" flags="ng" index="7MCEg">
@@ -58,6 +75,7 @@
       </concept>
       <concept id="674965200416767930" name="BSWModuleDescription.structure.ContainerValue" flags="ng" index="7MCFW">
         <reference id="674965200416911746" name="definition" index="7L4j4" />
+        <child id="674965200416911756" name="subContainers" index="7L4ja" />
       </concept>
       <concept id="7334674565656690063" name="BSWModuleDescription.structure.AUTOSARVals" flags="ng" index="1SLG8B">
         <child id="674965200416911858" name="referenceValues" index="7L4iO" />
@@ -79,28 +97,6 @@
   </registry>
   <node concept="1SOKV9" id="7Ouvy0DE$u1">
     <property role="3GE5qa" value="package2a" />
-    <node concept="7MCFo" id="4wlY9rmMefh" role="1SOKVa">
-      <property role="TrG5h" value="Com_0" />
-      <ref role="7MCEO" node="4wlY9rmMec5" resolve="Com" />
-      <node concept="7MCEg" id="4wlY9rmMefi" role="7L4jf">
-        <property role="TrG5h" value="parameter" />
-        <ref role="7L4j2" node="4wlY9rmMec6" resolve="parameter" />
-      </node>
-      <node concept="7L4iL" id="4wlY9rmMefj" role="7L4iO">
-        <ref role="7LONE" node="4wlY9rmMedc" resolve="param2" />
-      </node>
-      <node concept="7MCEg" id="4wlY9rmMefs" role="7L4jf">
-        <property role="TrG5h" value="parameter" />
-        <ref role="7L4j2" node="4wlY9rmMec6" resolve="parameter" />
-      </node>
-      <node concept="7L4iL" id="4wlY9rmMeft" role="7L4iO">
-        <ref role="7LONE" node="4wlY9rmMedc" resolve="param2" />
-      </node>
-      <node concept="7MCFW" id="4wlY9rmMefu" role="7L4j0">
-        <property role="TrG5h" value="container_0" />
-        <ref role="7L4j4" node="4wlY9rmMeeO" resolve="container" />
-      </node>
-    </node>
   </node>
   <node concept="1SOKV9" id="7Ouvy0DE$u4">
     <property role="3GE5qa" value="package2b" />
@@ -153,7 +149,6 @@
           <property role="TrG5h" value="RteBswPositionInIsr" />
           <node concept="30bXR$" id="4wlY9rmVJPE" role="2zM23F" />
         </node>
-        <node concept="2uLZmn" id="4wlY9rmVJPM" role="jXVSH" />
       </node>
       <node concept="jXVW4" id="4wlY9rmVJPQ" role="jXVSH">
         <property role="TrG5h" value="RteBswEventToTaskMapping" />
@@ -250,9 +245,17 @@
       <node concept="jXVW4" id="4wlY9rn0equ" role="jXVSH">
         <property role="TrG5h" value="RteBswModeMachineInstanceConfig" />
         <property role="2uLLrX" value="fLJekj5/_0__n" />
+        <node concept="2uLZmn" id="4wlY9rnL3fH" role="jXVSH" />
         <node concept="1kk_Av" id="4wlY9rn0er2" role="jXVSH">
           <property role="TrG5h" value="RteBswModeMachineQueueLength" />
-          <node concept="30bXR$" id="4wlY9rn0ere" role="2zM23F" />
+          <node concept="30bXRB" id="4wlY9rnL3aH" role="X0jMJ">
+            <property role="30bXRw" value="2.2" />
+          </node>
+          <node concept="mLuIC" id="4wlY9rnL3cM" role="2zM23F">
+            <node concept="2gteS_" id="4wlY9rnL3dq" role="2gteVg">
+              <property role="2gteVv" value="2" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="jXVW4" id="4wlY9rn0erm" role="jXVSH">
@@ -293,6 +296,7 @@
       <property role="2uLLrX" value="fLJekj5/_0__n" />
       <node concept="jXVW4" id="4wlY9rn1lSO" role="jXVSH">
         <property role="TrG5h" value="ComUserModuleCnf" />
+        <node concept="2uLZmn" id="4wlY9rnL3fn" role="jXVSH" />
         <node concept="1kk_Av" id="4wlY9rn1lSQ" role="jXVSH">
           <property role="TrG5h" value="ComUserHeaderInclude" />
           <node concept="30bdrU" id="4wlY9rn1lT2" role="2zM23F" />
@@ -414,7 +418,10 @@
       </node>
       <node concept="1kk_Av" id="4wlY9rn1mM$" role="jXVSH">
         <property role="TrG5h" value="RteInExclusiveAreaCheckEnabled" />
-        <node concept="2vmvy5" id="4wlY9rn1mN3" role="2zM23F" />
+        <node concept="30bXR$" id="4wlY9rnMF_Q" role="2zM23F" />
+        <node concept="X0tia" id="4wlY9rnMF_D" role="X0jMJ">
+          <ref role="X0LbG" node="4wlY9rn1mV8" resolve="RteVfbTraceClientPosition" />
+        </node>
       </node>
       <node concept="1kk_Av" id="4wlY9rn1mNx" role="jXVSH">
         <property role="TrG5h" value="RteMeasurementSupport" />
@@ -432,6 +439,9 @@
       <node concept="1kk_Av" id="4wlY9rn1mPz" role="jXVSH">
         <property role="TrG5h" value="RteToolChainSignificantCharacters" />
         <node concept="30bXR$" id="4wlY9rn1mQ9" role="2zM23F" />
+        <node concept="X0tia" id="3vRdhPwQkiQ" role="X0jMJ">
+          <ref role="X0LbG" node="4wlY9rn1mV8" resolve="RteVfbTraceClientPosition" />
+        </node>
       </node>
       <node concept="1kk_Av" id="4wlY9rn1mQI" role="jXVSH">
         <property role="TrG5h" value="RteValueRangeCheckEnabled" />
@@ -483,10 +493,17 @@
         <node concept="1kk_Av" id="4wlY9rn1mZl" role="jXVSH">
           <property role="TrG5h" value="RtePositionInTask" />
           <node concept="30bXR$" id="4wlY9rn1mZB" role="2zM23F" />
+          <node concept="X0tia" id="4wlY9rnOynO" role="X0jMJ">
+            <ref role="X0LbG" node="4wlY9rnLVkp" resolve="dummy" />
+          </node>
         </node>
         <node concept="1kk_Av" id="4wlY9rn1mZT" role="jXVSH">
           <property role="TrG5h" value="RteServerQueueLength" />
           <node concept="30bXR$" id="4wlY9rn1n0d" role="2zM23F" />
+        </node>
+        <node concept="1kk_Av" id="4wlY9rnLVkp" role="jXVSH">
+          <property role="TrG5h" value="dummy" />
+          <node concept="30bXR$" id="4wlY9rnOynf" role="2zM23F" />
         </node>
         <node concept="jXZ$6" id="4wlY9rn4aav" role="jXVSH">
           <property role="TrG5h" value="RteMappedToTaskRef" />
@@ -543,6 +560,19 @@
     <node concept="jXVW4" id="4wlY9rn49LB" role="jXVUU">
       <property role="TrG5h" value="OsAppMode" />
       <property role="2uLLrX" value="fLJekj4/_1" />
+      <node concept="2uYKvh" id="4wlY9rnD6Xf" role="jXVSH">
+        <property role="TrG5h" value="Test" />
+        <node concept="5mgYR" id="4wlY9rnD6Xn" role="5mgYi">
+          <property role="TrG5h" value="test1" />
+        </node>
+        <node concept="5mgYR" id="4wlY9rnD6Xs" role="5mgYi">
+          <property role="TrG5h" value="test2" />
+        </node>
+      </node>
+      <node concept="1kk_Av" id="4wlY9rnD9_L" role="jXVSH">
+        <property role="TrG5h" value="Test" />
+        <node concept="2vmvy5" id="4wlY9rnEv53" role="2zM23F" />
+      </node>
     </node>
     <node concept="jXVW4" id="4wlY9rn49M8" role="jXVUU">
       <property role="TrG5h" value="OsApplication" />
@@ -686,6 +716,107 @@
     <node concept="jXVW4" id="4wlY9rn4a78" role="jXVUU">
       <property role="TrG5h" value="OsResource" />
       <property role="2uLLrX" value="fLJekj5/_0__n" />
+    </node>
+  </node>
+  <node concept="jXVLJ" id="4wlY9rntrMJ">
+    <property role="3GE5qa" value="package1b" />
+    <property role="TrG5h" value="TT" />
+    <property role="OYnhT" value="test" />
+    <node concept="jXVW4" id="4wlY9rnNahq" role="jXVUU">
+      <property role="TrG5h" value="Test" />
+      <property role="2uLLrX" value="fLJekj4/_1" />
+      <node concept="1kk_Av" id="4wlY9rnNahY" role="jXVSH">
+        <property role="TrG5h" value="test2" />
+        <node concept="X0tia" id="4wlY9rnO55o" role="X0jMJ">
+          <ref role="X0LbG" node="4wlY9rnNah$" resolve="test1234" />
+        </node>
+      </node>
+      <node concept="jXVW4" id="4wlY9rnNahy" role="jXVSH">
+        <property role="TrG5h" value="sub1" />
+        <property role="2uLLrX" value="fLJekj4/_1" />
+        <node concept="1kk_Av" id="4wlY9rnNah$" role="jXVSH">
+          <property role="TrG5h" value="test1234" />
+          <node concept="30bXRB" id="3vRdhPwOXRh" role="X0jMJ">
+            <property role="30bXRw" value="1" />
+          </node>
+        </node>
+        <node concept="1kk_Av" id="3vRdhPwMa$P" role="jXVSH">
+          <property role="TrG5h" value="tt" />
+          <node concept="30bXR$" id="3vRdhPwMa_4" role="2zM23F" />
+        </node>
+        <node concept="jXVW4" id="3vRdhPwOXN5" role="jXVSH">
+          <property role="TrG5h" value="sub11" />
+          <property role="2uLLrX" value="fLJekj6/_1__n" />
+          <node concept="1kk_Av" id="3vRdhPwOXNc" role="jXVSH">
+            <property role="TrG5h" value="test" />
+            <node concept="30dDZf" id="3vRdhPwPRPV" role="X0jMJ">
+              <node concept="X0tia" id="3vRdhPwPRQn" role="30dEs_">
+                <ref role="X0LbG" node="3vRdhPwPRPf" resolve="test111" />
+              </node>
+              <node concept="30bXRB" id="3vRdhPwOXNq" role="30dEsF">
+                <property role="30bXRw" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="jXVW4" id="3vRdhPwPRPa" role="jXVSH">
+            <property role="TrG5h" value="sub111" />
+            <property role="2uLLrX" value="fLJekj4/_1" />
+            <node concept="1kk_Av" id="3vRdhPwPRPf" role="jXVSH">
+              <property role="TrG5h" value="test111" />
+              <node concept="30bXR$" id="3vRdhPwTuI9" role="2zM23F" />
+              <node concept="30bXRB" id="3vRdhPwWQBk" role="X0jMJ">
+                <property role="30bXRw" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="7MCFo" id="4wlY9rnC82h">
+    <property role="3GE5qa" value="package2a" />
+    <property role="TrG5h" value="R" />
+    <ref role="7MCEO" node="4wlY9rmNAeA" resolve="Rte" />
+  </node>
+  <node concept="7MCFo" id="4wlY9rnCck4">
+    <property role="3GE5qa" value="package2a" />
+    <property role="TrG5h" value="TT_0" />
+    <ref role="7MCEO" node="4wlY9rntrMJ" resolve="TT" />
+    <node concept="7MCFW" id="3vRdhPwX2LP" role="7L4j0">
+      <property role="TrG5h" value="Test_0" />
+      <ref role="7L4j4" node="4wlY9rnNahq" resolve="Test" />
+      <node concept="7MCEg" id="3vRdhPwX2LQ" role="7L4jf">
+        <property role="TrG5h" value="test2" />
+        <ref role="7L4j2" node="4wlY9rnNahY" resolve="test2" />
+      </node>
+      <node concept="7MCFW" id="3vRdhPwX2LR" role="7L4ja">
+        <property role="TrG5h" value="sub1_0" />
+        <ref role="7L4j4" node="4wlY9rnNahy" resolve="sub1" />
+        <node concept="7MCEg" id="3vRdhPwX2LS" role="7L4jf">
+          <property role="TrG5h" value="test1234" />
+          <ref role="7L4j2" node="4wlY9rnNah$" resolve="test1234" />
+        </node>
+        <node concept="7MCEg" id="3vRdhPwX2LT" role="7L4jf">
+          <property role="TrG5h" value="tt" />
+          <ref role="7L4j2" node="3vRdhPwMa$P" resolve="tt" />
+        </node>
+        <node concept="7MCFW" id="3vRdhPwX2LU" role="7L4ja">
+          <property role="TrG5h" value="sub11_0" />
+          <ref role="7L4j4" node="3vRdhPwOXN5" resolve="sub11" />
+          <node concept="7MCEg" id="3vRdhPwX2LV" role="7L4jf">
+            <property role="TrG5h" value="test" />
+            <ref role="7L4j2" node="3vRdhPwOXNc" resolve="test" />
+          </node>
+          <node concept="7MCFW" id="3vRdhPwX2LW" role="7L4ja">
+            <property role="TrG5h" value="sub111_0" />
+            <ref role="7L4j4" node="3vRdhPwPRPa" resolve="sub111" />
+            <node concept="7MCEg" id="3vRdhPwX2LX" role="7L4jf">
+              <property role="TrG5h" value="test111" />
+              <ref role="7L4j2" node="3vRdhPwPRPf" resolve="test111" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

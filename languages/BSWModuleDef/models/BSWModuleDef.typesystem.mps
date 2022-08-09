@@ -88,7 +88,7 @@
                 <ref role="1YBMHb" node="5st34LEcQDS" resolve="parameterDefRef" />
               </node>
               <node concept="3TrEf2" id="5st34LEevyM" role="2OqNvi">
-                <ref role="3Tt5mk" to="o4r4:5st34LE7xUw" resolve="parameters" />
+                <ref role="3Tt5mk" to="o4r4:5st34LE7xUw" resolve="parameter" />
               </node>
             </node>
           </node>
