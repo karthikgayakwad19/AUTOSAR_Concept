@@ -60,6 +60,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="o4r4:3gKCqWBLLR0" resolve="ModuleDef" />
     </node>
+    <node concept="1TJgyj" id="3yVUqOeM$u4" role="1TKVEi">
+      <property role="IQ2ns" value="4088118016255608708" />
+      <property role="20kJfa" value="import" />
+      <ref role="20lvS9" node="_tXkoe_RYu" resolve="ModuleValue" />
+    </node>
     <node concept="1TJgyj" id="_tXkoeAr66" role="1TKVEi">
       <property role="IQ2ns" value="674965200416911750" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -99,11 +104,10 @@
     <node concept="PrWs8" id="6Bmu5uOW_6H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="6Bmu5uPiU3L" role="1TKVEi">
-      <property role="IQ2ns" value="7626415337097634033" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="value" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="3yVUqOeG8gF" role="1TKVEl">
+      <property role="IQ2nx" value="4088118016253920299" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="_tXkoeAr7R">
@@ -166,23 +170,6 @@
     </node>
     <node concept="PrWs8" id="2j7NeO21DBK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6Bmu5uP9G4P">
-    <property role="EcuMT" value="7626415337095217461" />
-    <property role="TrG5h" value="VariationPoint" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4FuNB7wo319" role="1TKVEi">
-      <property role="IQ2ns" value="5394976392127459401" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="value" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="4FuNB7wpdRi" role="1TKVEi">
-      <property role="IQ2ns" value="5394976392127765970" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="comment" />
-      <ref role="20lvS9" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
     </node>
   </node>
   <node concept="1TIwiD" id="4wlY9rnCcmD">
