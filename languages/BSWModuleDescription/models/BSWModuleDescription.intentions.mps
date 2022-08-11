@@ -31,6 +31,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -92,7 +95,7 @@
       <node concept="3clFbS" id="5D3OXK44Vt$" role="2VODD2">
         <node concept="3clFbF" id="5D3OXK44W_Z" role="3cqZAp">
           <node concept="Xl_RD" id="5D3OXK44W_Y" role="3clFbG">
-            <property role="Xl_RC" value="Generate Configuration" />
+            <property role="Xl_RC" value="Generate Configuration with Mandatory Containers" />
           </node>
         </node>
       </node>
@@ -123,6 +126,7 @@
               </node>
               <node concept="2Sf5sV" id="7Ouvy0CGjQk" role="1m5AlR" />
             </node>
+            <node concept="3clFbT" id="3yVUqOfYLXv" role="37wK5m" />
           </node>
         </node>
         <node concept="3clFbH" id="7Ouvy0CB1g1" role="3cqZAp" />
@@ -172,6 +176,7 @@
               </node>
               <node concept="2Sf5sV" id="5st34LEap63" role="1m5AlR" />
             </node>
+            <node concept="3clFbT" id="3yVUqOfYM9W" role="37wK5m" />
           </node>
         </node>
         <node concept="3clFbH" id="5D3OXK4iC$8" role="3cqZAp" />
@@ -234,6 +239,7 @@
                     <ref role="3Tt5mk" to="unt2:_tXkoeAr62" resolve="definition" />
                   </node>
                 </node>
+                <node concept="3clFbT" id="3yVUqOfZxQj" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -283,6 +289,51 @@
                 <node concept="2Sf5sV" id="5D3OXK4hRa_" role="2Oq$k0" />
                 <node concept="1$rogu" id="5D3OXK4hS7O" role="2OqNvi" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3yVUqOfXTL7">
+    <property role="TrG5h" value="GenerateOptionalContainers" />
+    <ref role="2ZfgGC" to="unt2:_tXkoe_RYu" resolve="ModuleValue" />
+    <node concept="2S6ZIM" id="3yVUqOfXTL8" role="2ZfVej">
+      <node concept="3clFbS" id="3yVUqOfXTL9" role="2VODD2">
+        <node concept="3clFbF" id="3yVUqOfXTQ9" role="3cqZAp">
+          <node concept="Xl_RD" id="3yVUqOfXTQ8" role="3clFbG">
+            <property role="Xl_RC" value="Generate Configuration with Optional Containers" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3yVUqOfXTLa" role="2ZfgGD">
+      <node concept="3clFbS" id="3yVUqOfXTLb" role="2VODD2">
+        <node concept="3clFbF" id="3yVUqOfYMmw" role="3cqZAp">
+          <node concept="2YIFZM" id="3yVUqOfYMmx" role="3clFbG">
+            <ref role="37wK5l" to="6j1s:7Ouvy0CFSXP" resolve="createModuleContents" />
+            <ref role="1Pybhc" to="6j1s:5D3OXK4etNc" resolve="ContentsGeneration" />
+            <node concept="2OqwBi" id="3yVUqOfYMmy" role="37wK5m">
+              <node concept="1PxgMI" id="3yVUqOfYMmz" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="3yVUqOfYMm$" role="3oSUPX">
+                  <ref role="cht4Q" to="unt2:_tXkoe_RYu" resolve="ModuleValue" />
+                </node>
+                <node concept="2Sf5sV" id="3yVUqOfYMm_" role="1m5AlR" />
+              </node>
+              <node concept="3TrEf2" id="3yVUqOfYMmA" role="2OqNvi">
+                <ref role="3Tt5mk" to="unt2:_tXkoe_RZM" resolve="definition" />
+              </node>
+            </node>
+            <node concept="1PxgMI" id="3yVUqOfYMmB" role="37wK5m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="3yVUqOfYMmC" role="3oSUPX">
+                <ref role="cht4Q" to="unt2:_tXkoe_RYu" resolve="ModuleValue" />
+              </node>
+              <node concept="2Sf5sV" id="3yVUqOfYMmD" role="1m5AlR" />
+            </node>
+            <node concept="3clFbT" id="3yVUqOfYMmE" role="37wK5m">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
