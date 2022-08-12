@@ -93,7 +93,7 @@
       <ref role="20lvS9" node="4wlY9rmOwOy" resolve="ITopLevelElement" />
     </node>
     <node concept="1QGGSu" id="5st34LEALc_" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/INT1.jpg" />
+      <property role="1iqoE4" value="${module}/icons/Def16.png" />
     </node>
     <node concept="PrWs8" id="4wlY9rmOITD" role="PzmwI">
       <ref role="PrY4T" node="4wlY9rmOwOy" resolve="ITopLevelElement" />

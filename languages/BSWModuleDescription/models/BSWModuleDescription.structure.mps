@@ -18,6 +18,11 @@
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -30,6 +35,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -98,11 +104,14 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="_tXkoe_RYU" resolve="ContainerValue" />
     </node>
+    <node concept="1QGGSu" id="3yVUqOg7jBT" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/Val16.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="_tXkoe_RZm">
     <property role="EcuMT" value="674965200416767958" />
     <property role="TrG5h" value="ParameterValue" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="_tXkoeAr64" role="1TKVEi">
       <property role="IQ2ns" value="674965200416911748" />
       <property role="20kJfa" value="definition" />
@@ -115,11 +124,10 @@
     <node concept="PrWs8" id="3yVUqOfIP5I" role="PzmwI">
       <ref role="PrY4T" to="hm2y:69zaTr1EKHW" resolve="IOptionallyTyped" />
     </node>
-    <node concept="1TJgyj" id="5st34LE733z" role="1TKVEi">
-      <property role="IQ2ns" value="6277186977961619683" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="value" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="3yVUqOg91or" role="1TKVEl">
+      <property role="IQ2nx" value="4088118016278271515" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="_tXkoeAr7R">
