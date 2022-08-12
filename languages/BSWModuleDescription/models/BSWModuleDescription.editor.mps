@@ -80,6 +80,9 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
+        <property id="1214316229833" name="underlined" index="2USNnj" />
+      </concept>
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
       </concept>
@@ -959,6 +962,14 @@
             </node>
           </node>
         </node>
+        <node concept="3F2HdR" id="3yVUqOgmv7m" role="3EZMnx">
+          <ref role="1NtTu8" to="unt2:_tXkoeAr7M" resolve="referenceValues" />
+          <node concept="2iRkQZ" id="3yVUqOgmv7o" role="2czzBx" />
+        </node>
+        <node concept="3F2HdR" id="3yVUqOgmvke" role="3EZMnx">
+          <ref role="1NtTu8" to="unt2:4wlY9rnFkzP" resolve="enumValues" />
+          <node concept="2iRkQZ" id="3yVUqOgmvkg" role="2czzBx" />
+        </node>
         <node concept="3F2HdR" id="3yVUqOfWcjA" role="3EZMnx">
           <ref role="1NtTu8" to="unt2:_tXkoeAr6c" resolve="subContainers" />
           <node concept="2iRkQZ" id="3yVUqOfWcjC" role="2czzBx" />
@@ -1092,7 +1103,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7Ouvy0CUNWO" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
+        <property role="3F0ifm" value="=" />
       </node>
       <node concept="2iRfu4" id="5D3OXK45_5z" role="2iSdaV" />
       <node concept="1iCGBv" id="5D3OXK45_5L" role="3EZMnx">
@@ -1101,14 +1112,17 @@
           <node concept="3F0A7n" id="5D3OXK45_5Z" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VechU" id="3yVUqOgGrOZ" role="3F10Kt">
+              <property role="Vb096" value="fLwANPu/blue" />
+            </node>
+            <node concept="VQ3r3" id="3yVUqOgGrP7" role="3F10Kt">
+              <property role="2USNnj" value="gtbM8PH/underlined" />
+            </node>
           </node>
         </node>
         <node concept="A1WHu" id="6Bmu5uOZOuS" role="3vIgyS">
           <ref role="A1WHt" node="7Ouvy0DNuFV" resolve="destinationVal" />
         </node>
-      </node>
-      <node concept="3F0ifn" id="5D3OXK4hwV4" role="3EZMnx">
-        <property role="3F0ifm" value=")," />
       </node>
     </node>
   </node>
