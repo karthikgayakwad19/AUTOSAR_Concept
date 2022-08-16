@@ -257,7 +257,7 @@
         <node concept="3F0ifn" id="5st34LEjFoO" role="3EZMnx">
           <property role="3F0ifm" value="Module Name : " />
           <node concept="VechU" id="5st34LElPlA" role="3F10Kt">
-            <property role="Vb096" value="fLwANPu/blue" />
+            <property role="Vb096" value="fLwANPp/orange" />
           </node>
         </node>
         <node concept="3F0A7n" id="5st34LEjFpc" role="3EZMnx">
