@@ -476,14 +476,8 @@
             <property role="Vb096" value="fLJRk5_/gray" />
           </node>
         </node>
-        <node concept="1iCGBv" id="3yVUqOeM$yr" role="3EZMnx">
-          <ref role="1NtTu8" to="unt2:_tXkoe_RZM" resolve="definition" />
-          <node concept="1sVBvm" id="3yVUqOeM$yt" role="1sWHZn">
-            <node concept="3F0A7n" id="3yVUqOeM$yA" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:gOOYnlO" resolve="shortDescription" />
-            </node>
-          </node>
+        <node concept="3F0A7n" id="6mMrqkwNrvw" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:gOOYnlO" resolve="shortDescription" />
         </node>
       </node>
       <node concept="3F0ifn" id="3yVUqOeM$xa" role="3EZMnx" />
