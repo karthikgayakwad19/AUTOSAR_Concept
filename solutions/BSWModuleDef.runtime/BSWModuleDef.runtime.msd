@@ -13,6 +13,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">e3030623-38bb-48cb-ae7e-f3be4cd83f0e(BSWModuleDef)</dependency>
+    <dependency reexport="false">ef22f920-a15b-4c66-a06e-e0c4aea10605(BSWModuleDescription)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
@@ -33,6 +34,7 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="e3030623-38bb-48cb-ae7e-f3be4cd83f0e(BSWModuleDef)" version="0" />
     <module reference="e59fcfc5-593b-4a73-88ab-a5c06ceb30ad(BSWModuleDef.runtime)" version="0" />
+    <module reference="ef22f920-a15b-4c66-a06e-e0c4aea10605(BSWModuleDescription)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />

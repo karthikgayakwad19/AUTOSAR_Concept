@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="o4r4" ref="r:1dfccbdf-a5e4-4798-9d92-ff10e8880347(BSWModuleDef.structure)" />
+    <import index="unt2" ref="r:327da334-76e6-4692-920d-0f681c8933c8(BSWModuleDescription.structure)" />
   </imports>
   <registry>
     <language id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter">
@@ -54,6 +55,15 @@
       <node concept="3vetai" id="4wlY9rnMrb3" role="3vQZUl">
         <node concept="rqRoa" id="4wlY9rnMrbh" role="3vdyny">
           <ref role="rqRob" to="o4r4:5st34LE733z" resolve="value" />
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="6kv57tWWr64" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="unt2:_tXkoe_RZm" resolve="ParameterValue" />
+      <node concept="3vetai" id="6kv57tWWr6B" role="3vQZUl">
+        <node concept="rqRoa" id="6kv57tWWr75" role="3vdyny">
+          <ref role="rqRob" to="unt2:6kv57tW5ko2" resolve="value" />
         </node>
       </node>
     </node>

@@ -142,7 +142,7 @@
   </node>
   <node concept="1TIwiD" id="7Ouvy0Dj2uZ">
     <property role="EcuMT" value="9015782180639221695" />
-    <property role="TrG5h" value="AlphaNumericParameterDef" />
+    <property role="TrG5h" value="ParameterDef" />
     <property role="34LRSv" value="param" />
     <ref role="1TJDcQ" node="4wlY9rmN7pk" resolve="AbstractParameterDef" />
     <node concept="1TJgyj" id="5st34LE733z" role="1TKVEi">
@@ -166,7 +166,7 @@
       <property role="IQ2ns" value="6277186977961746080" />
       <property role="20kJfa" value="parameter" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7Ouvy0Dj2uZ" resolve="AlphaNumericParameterDef" />
+      <ref role="20lvS9" node="7Ouvy0Dj2uZ" resolve="ParameterDef" />
     </node>
   </node>
   <node concept="1TIwiD" id="4wlY9rmN7pk">

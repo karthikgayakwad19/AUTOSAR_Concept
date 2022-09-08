@@ -144,7 +144,7 @@
     </node>
     <node concept="1YaCAy" id="5st34LEcTTF" role="1YuTPh">
       <property role="TrG5h" value="parameterDef" />
-      <ref role="1YaFvo" to="o4r4:7Ouvy0Dj2uZ" resolve="AlphaNumericParameterDef" />
+      <ref role="1YaFvo" to="o4r4:7Ouvy0Dj2uZ" resolve="ParameterDef" />
     </node>
   </node>
 </model>

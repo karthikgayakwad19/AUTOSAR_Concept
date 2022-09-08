@@ -560,7 +560,7 @@
     <node concept="22hDWj" id="7Ouvy0DkpUP" role="22hAXT" />
   </node>
   <node concept="24kQdi" id="6Bmu5uOXE7S">
-    <ref role="1XX52x" to="o4r4:7Ouvy0Dj2uZ" resolve="AlphaNumericParameterDef" />
+    <ref role="1XX52x" to="o4r4:7Ouvy0Dj2uZ" resolve="ParameterDef" />
     <node concept="3EZMnI" id="6Bmu5uOXE8k" role="2wV5jI">
       <node concept="3F0A7n" id="6Bmu5uOXE8H" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
