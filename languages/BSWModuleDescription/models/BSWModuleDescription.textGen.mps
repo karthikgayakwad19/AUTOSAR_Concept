@@ -114,17 +114,12 @@
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
         <child id="7991274449437422201" name="extension" index="33IsuW" />
       </concept>
-      <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
         <child id="1234526822589" name="function" index="1Jy66y" />
       </concept>
       <concept id="1233922353619" name="jetbrains.mps.lang.textGen.structure.OperationDeclaration" flags="sg" stub="3147100357551177019" index="1bwezc" />
-      <concept id="1233924848298" name="jetbrains.mps.lang.textGen.structure.OperationCall" flags="ng" index="1bDJIP">
-        <reference id="1234190664409" name="function" index="1rvKf6" />
-        <child id="1234191323697" name="parameter" index="1ryhcI" />
-      </concept>
       <concept id="1234524838116" name="jetbrains.mps.lang.textGen.structure.UtilityMethodDeclaration" flags="ng" index="1JqxBV" />
       <concept id="1234529062040" name="jetbrains.mps.lang.textGen.structure.UtilityMethodCall" flags="nn" index="1JECQ7">
         <reference id="1234529163244" name="function" index="1JF1rN" />
@@ -832,14 +827,7 @@
       </node>
     </node>
     <node concept="11bSqf" id="1J0zrHTQ6Oq" role="11c4hB">
-      <node concept="3clFbS" id="1J0zrHTQ6Or" role="2VODD2">
-        <node concept="lc7rE" id="1J0zrHTQ6Vz" role="3cqZAp">
-          <node concept="1bDJIP" id="1J0zrHTQ6Wp" role="lcghm">
-            <ref role="1rvKf6" node="hZL5XWa" resolve="byElement" />
-            <node concept="117lpO" id="1J0zrHTQ6WX" role="1ryhcI" />
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="1J0zrHTQ6Or" role="2VODD2" />
     </node>
   </node>
 </model>

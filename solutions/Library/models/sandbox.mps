@@ -139,6 +139,7 @@
               <property role="30bXRw" value="10" />
             </node>
           </node>
+          <node concept="30bXR$" id="1J0zrHUdV11" role="2zM23F" />
         </node>
         <node concept="1kk_Av" id="6kv57tW5kgF" role="jXVSH">
           <property role="TrG5h" value="Test" />
@@ -1245,6 +1246,69 @@
         </node>
         <node concept="7L4iL" id="1J0zrHTSSzI" role="7L4iO">
           <ref role="7LONE" node="4wlY9rn4abN" resolve="RteVirtuallyMappedToTaskRef" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jXVLJ" id="1J0zrHUdfmj">
+    <property role="3GE5qa" value="Definitions" />
+    <property role="TrG5h" value="Com" />
+    <property role="OYnhT" value="Com Test" />
+    <node concept="jXVW4" id="1J0zrHUdj2y" role="jXVUU">
+      <property role="TrG5h" value="ContainerA" />
+      <property role="2uLLrX" value="fLJekj6/_1__n" />
+      <node concept="1kk_Av" id="1J0zrHUdj3$" role="jXVSH">
+        <property role="TrG5h" value="parameter1" />
+        <node concept="30dDZf" id="1J0zrHUdjbC" role="X0jMJ">
+          <node concept="X0tia" id="1J0zrHUdjck" role="30dEs_">
+            <ref role="X0LbG" node="1J0zrHUdjaB" resolve="parameter2" />
+          </node>
+          <node concept="30bXRB" id="1J0zrHUdj4$" role="30dEsF">
+            <property role="30bXRw" value="10" />
+          </node>
+        </node>
+        <node concept="30bXR$" id="1J0zrHUdjnv" role="2zM23F" />
+      </node>
+      <node concept="1kk_Av" id="1J0zrHUdjaB" role="jXVSH">
+        <property role="TrG5h" value="parameter2" />
+        <node concept="30bXRB" id="1J0zrHUdjba" role="X0jMJ">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
+      <node concept="jXVW4" id="1J0zrHUdj6$" role="jXVSH">
+        <property role="TrG5h" value="Subcontainer" />
+        <property role="2uLLrX" value="fLJekj6/_1__n" />
+        <node concept="jXZ$6" id="1J0zrHUdj7T" role="jXVSH">
+          <property role="TrG5h" value="parentRef" />
+          <ref role="7Lzr$" node="1J0zrHUdj2y" resolve="ContainerA" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="7MCFo" id="1J0zrHUdj8b">
+    <property role="3GE5qa" value="Values" />
+    <property role="TrG5h" value="Com_0" />
+    <ref role="7MCEO" node="1J0zrHUdfmj" resolve="Com" />
+    <node concept="7MCFW" id="1J0zrHUdjeu" role="7L4j0">
+      <property role="TrG5h" value="ContainerA_0" />
+      <ref role="7L4j4" node="1J0zrHUdj2y" resolve="ContainerA" />
+      <node concept="7MCEg" id="1J0zrHUdjff" role="7L4jf">
+        <ref role="7L4j2" node="1J0zrHUdj3$" resolve="parameter1" />
+        <node concept="30bXRB" id="1J0zrHUdjfe" role="p2_9P">
+          <property role="30bXRw" value="20" />
+        </node>
+      </node>
+      <node concept="7MCEg" id="1J0zrHUdjfh" role="7L4jf">
+        <ref role="7L4j2" node="1J0zrHUdjaB" resolve="parameter2" />
+        <node concept="30bXRB" id="1J0zrHUdjfg" role="p2_9P">
+          <property role="30bXRw" value="10" />
+        </node>
+      </node>
+      <node concept="7MCFW" id="1J0zrHUdjfi" role="7L4ja">
+        <property role="TrG5h" value="Subcontainer_0" />
+        <ref role="7L4j4" node="1J0zrHUdj6$" resolve="Subcontainer" />
+        <node concept="7L4iL" id="1J0zrHUdjfj" role="7L4iO">
+          <ref role="7LONE" node="1J0zrHUdj7T" resolve="parentRef" />
         </node>
       </node>
     </node>
